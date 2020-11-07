@@ -1,0 +1,25 @@
+.footer__container {
+  background-color: #000000;
+  color: #ffffff;
+  // #AF231C
+
+  padding: 60px 20px 20px 20px;
+
+  li {
+    list-style-type: none;
+    margin-top: 2%;
+  }
+  .footer__about {
+    justify-content: start;
+  }
+  .Link__Edit {
+    color: white;
+    text-decoration: none;
+  }
+
+  .footer__copyright {
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 0;
+  }
+}
