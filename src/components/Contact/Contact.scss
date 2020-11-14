@@ -1,3 +1,20 @@
 .contact__container {
-  background: rgb(61, 59, 59);
+  .form-group {
+    input[type="text"] {
+      background-color: #000000;
+      color: white;
+    }
+    input[type="email"] {
+      background-color: #000000;
+      color: white;
+    }
+    textarea {
+      background-color: #000000;
+      color: white;
+    }
+  }
+  .Link__Edit {
+    color: white;
+    text-decoration: none;
+  }
 }

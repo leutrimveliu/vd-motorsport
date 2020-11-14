@@ -54,7 +54,7 @@ const Footer = () => {
               <a
                 target="_blank"
                 href="
-                https://www.google.com/maps/dir/42.5894951,21.0698859/47.3945265,8.6548459/@44.7029299,6.2942556,5z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0"
+                https://www.google.com/maps/dir/?api=1&destination=47.394526499386%2C8.6548459023979&fbclid=IwAR1iJquZTbwn_uPjsUfgxtDCwm8pBBeWc4mwMXLS1K7NV4QHs7TIQXV4LTk"
                 className="Link__Edit"
               >
                 <RoomOutlinedIcon style={{ fontSize: 30 }} />
