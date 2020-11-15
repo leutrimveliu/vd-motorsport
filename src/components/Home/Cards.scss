@@ -1,0 +1,19 @@
+.cards {
+  .card__image {
+    transition: transform 0.3s ease-in;
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+  .event-opener {
+    text-decoration: none;
+    color: #af231c;
+  }
+  .card__body {
+    background-color: black;
+    .card__description {
+      color: white;
+      background-color: black;
+    }
+  }
+}

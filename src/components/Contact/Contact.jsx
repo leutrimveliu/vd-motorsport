@@ -36,7 +36,10 @@ export default function Contact() {
   return (
     <>
       <GoogleMap />
-      <div className="contact__container " style={{ backgroundColor: "black" }}>
+      <div
+        className="contact__container py-5"
+        style={{ backgroundColor: "black" }}
+      >
         <Row className="row m-0">
           <Col lg={6} md={12}>
             <div className=" d-flex justify-content-center my-3">
