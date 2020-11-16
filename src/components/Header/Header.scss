@@ -19,6 +19,15 @@
   }
   .navigation-menu {
   }
+  .language_container {
+    display: flex;
+    width: 180px;
+    color: white;
+    align-items: center;
+    border: 1px solid rgba(142, 142, 142, 0.5);
+    border-radius: 10px;
+    padding: 9px 12px;
+  }
 
   // Bootstrap Styles
 

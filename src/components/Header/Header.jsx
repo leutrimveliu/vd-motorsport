@@ -1,11 +1,20 @@
 import React from "react";
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
+
+import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/vd-logo.png";
+import EN from "../../assets/icon-england-flag.png";
+import GE from "../../assets/icon-germany-flag.png";
 
 import "./Header.scss";
 
 const Header = () => {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
   return (
     <div className="header">
       <Navbar collapseOnSelect expand="lg">
@@ -17,38 +26,65 @@ const Header = () => {
           <Nav className="mr-auto"></Nav>
           <Nav className="navigation-menu">
             <NavLink to="/" className="header__option">
-              Home
+              {t("Home")}
+              {/* Home */}
             </NavLink>
             <NavLink to="/projects" className="header__option">
-              Projects
+              {t("Projects")}
+              {/* Projects */}
             </NavLink>
             <NavLink to="/" className="header__option">
-              Services
+              {/* Services */}
+              {t("Services")}
             </NavLink>
             <NavLink to="/" className="header__option">
-              Videos
+              {/* Videos */}
+              {t("Videos")}
             </NavLink>
             <NavLink to="/contact" className="header__option">
-              Contact
+              {/* Contact */}
+              {t("Contact")}
             </NavLink>
             <NavLink to="/" className="header__option">
-              About
+              {/* About */}
+              {t("About")}
             </NavLink>
-            <NavDropdown
-              title="Dropdown"
-              id="collasible-nav-dropdown"
-              className="header__option"
+            {/* <NavLink to="/" className="header__option">
+              <ChooseLanguage />
+            </NavLink> */}
+            {/* <NavDropdown>
+              <ChooseLanguage />
+            </NavDropdown> */}
+            {/* <div>
+              <button type="button">{t("translation:de")}</button>
+
+              <button type="button">{t("translation:en")}</button>
+            </div> */}
+
+            <button
+              onClick={() => changeLanguage("en")}
+              style={{
+                backgroundColor: "black",
+                border: "none",
+                outline: "none",
+              }}
             >
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+              <img src={EN} alt="" srcset="" />
+            </button>
+            <button
+              onClick={() => changeLanguage("ge")}
+              style={{
+                backgroundColor: "black",
+                border: "none",
+                outline: "none",
+              }}
+            >
+              <img src={GE} alt="" srcset="" />
+            </button>
+
+            {/* <div className="language_container ">
+              <ChooseLanguage />
+            </div> */}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
