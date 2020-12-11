@@ -1,11 +1,12 @@
-import React from "react";
-import { Navbar, Nav } from "react-bootstrap";
+import React, { useState } from "react";
+import { Navbar, Nav, Dropdown } from "react-bootstrap";
 
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/vd-logo.png";
 import EN from "../../assets/icon-england-flag.png";
 import GE from "../../assets/icon-germany-flag.png";
+import { IconButton } from "@material-ui/core";
 
 import "./Header.scss";
 
@@ -15,6 +16,7 @@ const Header = () => {
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
   };
+
   return (
     <div className="header">
       <Navbar collapseOnSelect expand="lg">
@@ -49,42 +51,39 @@ const Header = () => {
               {/* About */}
               {t("About")}
             </NavLink>
-            {/* <NavLink to="/" className="header__option">
-              <ChooseLanguage />
-            </NavLink> */}
-            {/* <NavDropdown>
-              <ChooseLanguage />
-            </NavDropdown> */}
-            {/* <div>
-              <button type="button">{t("translation:de")}</button>
 
-              <button type="button">{t("translation:en")}</button>
-            </div> */}
+            <Dropdown>
+              <Dropdown.Toggle
+                style={{
+                  backgroundColor: "black",
+                  border: "none",
+                  outline: "none",
+                  button: "none",
+                }}
+                id="dropdown-basic"
+                className="header__option"
+              >
+                {t(`lang`)} <img src={t(`img`)} style={{ width: 20 }} />
+              </Dropdown.Toggle>
 
-            <button
-              onClick={() => changeLanguage("en")}
-              style={{
-                backgroundColor: "black",
-                border: "none",
-                outline: "none",
-              }}
-            >
-              <img src={EN} alt="" srcset="" />
-            </button>
-            <button
-              onClick={() => changeLanguage("ge")}
-              style={{
-                backgroundColor: "black",
-                border: "none",
-                outline: "none",
-              }}
-            >
-              <img src={GE} alt="" srcset="" />
-            </button>
-
-            {/* <div className="language_container ">
-              <ChooseLanguage />
-            </div> */}
+              <Dropdown.Menu
+                style={{ backgroundColor: "black" }}
+                className="header__Lang"
+              >
+                <Dropdown.Item className="header__Lang">
+                  <IconButton onClick={() => changeLanguage("en")}>
+                    <img src={EN} alt="" srcset="" />
+                  </IconButton>
+                </Dropdown.Item>
+                <Dropdown.Item className="header__Lang">
+                  {" "}
+                  <IconButton onClick={() => changeLanguage("ge")}>
+                    <img src={GE} alt="" srcset="" />
+                  </IconButton>
+                </Dropdown.Item>
+                <Dropdown.Item className="header__Lang">Italian</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

@@ -17,8 +17,35 @@
       background-color: #af231c;
     }
   }
-  .navigation-menu {
+
+  a.header__Lang.dropdown-item {
+    &:hover {
+      color: #ffffff;
+      background-color: #af231c;
+    }
   }
+  btn-primary:not(:disabled):not(.disabled).active:focus,
+  .btn-primary:not(:disabled):not(.disabled):active:focus,
+  .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+  }
+  btn-primary.focus,
+  .btn-primary:focus {
+    box-shadow: none;
+  }
+  .header__Lang {
+    padding: 0.5rem 1rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #af231c;
+    }
+  }
+
   .language_container {
     display: flex;
     width: 180px;
