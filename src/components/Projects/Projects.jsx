@@ -5,18 +5,20 @@ import i3 from "../../assets/mercedes.png";
 import i4 from "../../assets/lambo.jpeg";
 import i5 from "../../assets/audi2.jpg";
 import i6 from "../../assets/audi3.jpg";
+import "./Projects.scss";
 
 const Projects = () => {
   return (
-    <Carousel>
-      <Carousel.Item interval={1000}>
+    <Carousel autoPlay={true} interval={7000} controls={true}>
+      <Carousel.Item>
         <img className="d-block w-100" src={i1} alt="First slide" />
         <Carousel.Caption>
           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={500}>
+
+      <Carousel.Item>
         <img className="d-block w-100" src={i2} alt="Third slide" />
         <Carousel.Caption>
           <h3>Second slide label</h3>
@@ -24,7 +26,16 @@ const Projects = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block w-100" src={i4} alt="Third slide" />
+        <img className="d-block w-100" src={i6} alt="Third slide" />
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block w-100" src={i5} alt="Third slide" />
         <Carousel.Caption>
           <h3>Third slide label</h3>
           <p>

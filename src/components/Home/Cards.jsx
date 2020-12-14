@@ -25,11 +25,19 @@ const Cards = () => {
           </h1>
         </div>
       </div>
-      <div className="cards" style={{ backgroundColor: "black" }}>
-        <CardDeck as={Col} md={12} sm={6} className="pb-5">
-          <Card>
+      <div
+        className=" row cards d-flex justify-content-center pb-5 m-0"
+        style={{ backgroundColor: "black" }}
+      >
+        <CardDeck as={Col} xs={12} sm={12} md={4} lg={4}>
+          <Card className="card__container mb-2">
             <Card.Img
-              style={{ height: "250px" }}
+              component="img"
+              style={{
+                height: "250px",
+                objectFit: "contain",
+                backgroundColor: "black",
+              }}
               className="card__image"
               variant="top"
               src={i5}
@@ -51,10 +59,15 @@ const Cards = () => {
               <p>Some thing to say</p>
             </Card.Footer> */}
           </Card>
-
-          <Card>
+        </CardDeck>
+        <CardDeck as={Col} xs={12} sm={12} md={4} lg={4}>
+          <Card className="mb-2">
             <Card.Img
-              style={{ height: "250px" }}
+              style={{
+                height: "250px",
+                objectFit: "contain",
+                backgroundColor: "black",
+              }}
               className="card__image"
               variant="top"
               src={motor}
@@ -76,10 +89,15 @@ const Cards = () => {
               <p>Some thing to say</p>
             </Card.Footer> */}
           </Card>
-
-          <Card>
+        </CardDeck>
+        <CardDeck as={Col} xs={12} sm={12} md={4} lg={4}>
+          <Card className="mb-2">
             <Card.Img
-              style={{ height: "250px" }}
+              style={{
+                height: "250px",
+                objectFit: "contain",
+                backgroundColor: "black",
+              }}
               className="card__image"
               variant="top"
               src={i5}

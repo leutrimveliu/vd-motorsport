@@ -1,53 +1,50 @@
-import React, { useState } from "react";
-import ImgComp from "./ImgComp";
-import "./Slider.scss";
+import Carousel from "react-bootstrap/Carousel";
 import i1 from "../../assets/car1.jpg";
 import i2 from "../../assets/car2.jpg";
 import i3 from "../../assets/mercedes.png";
-import i4 from "../../assets/audi.jpg";
+import i4 from "../../assets/lambo.jpeg";
 import i5 from "../../assets/audi2.jpg";
 import i6 from "../../assets/audi3.jpg";
+import "./Slider.scss";
 
-function Slider() {
-  const [x, setX] = useState(0);
-  let sliderArr = [
-    <ImgComp src={i1} />,
-    <ImgComp src={i2} />,
-    <ImgComp src={i3} />,
-    <ImgComp src={i4} />,
-    <ImgComp src={i5} />,
-    <ImgComp src={i6} />,
-  ];
-
-  const goLeft = () => {
-    x === 0 ? setX(-100 * (sliderArr.length - 1)) : setX(x + 100);
-  };
-
-  const goRight = () => {
-    x === -100 * (sliderArr.length - 1) ? setX(0) : setX(x - 100);
-  };
-
+const Slider = () => {
   return (
-    <div className="slider">
-      {sliderArr.map((item, index) => {
-        return (
-          <div
-            key={index}
-            className="slide"
-            style={{ transform: `translateX(${x}%)` }}
-          >
-            {item}
-          </div>
-        );
-      })}
-      <button id="goLeft" onClick={goLeft}>
-        <i class="fas fa-chevron-left"></i>
-      </button>
-      <button id="goRight" onClick={goRight}>
-        <i class="fas fa-chevron-right"></i>
-      </button>
-    </div>
+    <Carousel autoPlay={true} interval={7000} controls={true}>
+      <Carousel.Item>
+        <img className="d-block w-100" src={i1} alt="First slide" />
+        <Carousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item>
+        <img className="d-block w-100" src={i2} alt="Third slide" />
+        <Carousel.Caption>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block w-100" src={i6} alt="Third slide" />
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block w-100" src={i5} alt="Third slide" />
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
   );
-}
+};
 
 export default Slider;
