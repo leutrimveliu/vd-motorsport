@@ -9,7 +9,12 @@ import "./Slider.scss";
 
 const Slider = () => {
   return (
-    <Carousel autoPlay={true} interval={7000} controls={true}>
+    <Carousel
+      autoPlay={true}
+      interval={7000}
+      controls={true}
+      style={{ marginTop: 89 }}
+    >
       <Carousel.Item>
         <img className="d-block w-100" src={i1} alt="First slide" />
         <Carousel.Caption>

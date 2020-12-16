@@ -13,6 +13,7 @@ class GoogleMap extends React.Component {
       <Map
         google={this.props.google}
         zoom={16}
+        style={{ marginTop: 89 }}
         className="GoogleMap__vd"
         containerStyle={style}
         initialCenter={{

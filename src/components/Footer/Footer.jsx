@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import logo from "../../assets/vd-shortlogo.png";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import RoomOutlinedIcon from "@material-ui/icons/RoomOutlined";
 import EmailOutlinedIcon from "@material-ui/icons/EmailOutlined";
 import CallOutlinedIcon from "@material-ui/icons/CallOutlined";
@@ -47,49 +47,50 @@ const Footer = () => {
             </ul>
           </Col>
           <Col lg={4} md={12} sm={12}>
-            <ul className="footer__support">
+            <ul className="footer__support ">
               <strong style={{ color: "#AF231C" }}>CONTACT US</strong>
               <hr />
-
-              <a
-                target="_blank"
-                href="
+              <div className="d-flex align-items-center flex-column">
+                <a
+                  target="_blank"
+                  href="
                 https://www.google.com/maps/dir/?api=1&destination=47.394526499386%2C8.6548459023979&fbclid=IwAR1iJquZTbwn_uPjsUfgxtDCwm8pBBeWc4mwMXLS1K7NV4QHs7TIQXV4LTk"
-                className="Link__Edit"
-              >
-                <RoomOutlinedIcon style={{ fontSize: 30 }} />
-                <i> Heidenrietstrasse 10 8600 Dübendorf, Switzerland</i>
-              </a>
-              <li>
-                <EmailOutlinedIcon />
-                <i> ecutechvelija@hotmail.com</i>
-              </li>
-              <li>
-                {" "}
-                <CallOutlinedIcon /> <span>&nbsp;&nbsp;</span>
-                <i> +41 76 330 76 82 </i>
-              </li>
-              <a
-                target="_blank"
-                href="
+                  className="Link__Edit"
+                >
+                  <RoomOutlinedIcon style={{ fontSize: 30 }} />
+                  <i> Heidenrietstrasse 10 8600 Dübendorf, Switzerland</i>
+                </a>
+                <li>
+                  <EmailOutlinedIcon />
+                  <i> ecutechvelija@hotmail.com</i>
+                </li>
+                <li>
+                  {" "}
+                  <CallOutlinedIcon /> <span>&nbsp;&nbsp;</span>
+                  <i> +41 76 330 76 82 </i>
+                </li>
+                <a
+                  target="_blank"
+                  href="
                 https://www.facebook.com/vdmotorsport.ch"
-                className="Link__Edit"
-              >
-                <li>
-                  <FacebookIcon /> <span>&nbsp;&nbsp;</span>VD/Motorsport
-                </li>
-              </a>
-              <a
-                target="_blank"
-                href="
+                  className="Link__Edit"
+                >
+                  <li>
+                    <FacebookIcon /> <span>&nbsp;&nbsp;</span>VD/Motorsport
+                  </li>
+                </a>
+                <a
+                  target="_blank"
+                  href="
                 https://www.instagram.com/vdm_motorsport/"
-                className="Link__Edit"
-              >
-                <li>
-                  <InstagramIcon />
-                  <span>&nbsp;&nbsp;</span>vdm_motorsport
-                </li>
-              </a>
+                  className="Link__Edit"
+                >
+                  <li>
+                    <InstagramIcon />
+                    <span>&nbsp;&nbsp;</span>vdm_motorsport
+                  </li>
+                </a>
+              </div>
             </ul>
           </Col>
         </Row>

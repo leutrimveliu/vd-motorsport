@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Navbar, Nav, Dropdown } from "react-bootstrap";
-
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/vd-logo.png";
@@ -23,7 +22,13 @@ const Header = () => {
 
   return (
     <div className="header">
-      <Navbar collapseOnSelect expand="lg" expanded={expanded}>
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        expanded={expanded}
+        fixed="top"
+        style={{ backgroundColor: "#000000" }}
+      >
         <NavLink to="/" className="header__logo">
           <img src={logo} alt="" sizes="" srcset="" width="250px" />
         </NavLink>
@@ -36,6 +41,7 @@ const Header = () => {
           <Nav className="navigation-menu">
             <NavLink
               to="/"
+              // activeClassName="active"
               className="header__option"
               onClick={() => setExpanded(false)}
             >

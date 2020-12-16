@@ -9,11 +9,13 @@ const Cards = () => {
   return (
     <div>
       <div className="moto" style={{ backgroundColor: "black" }}>
-        <div className="d-flex justify-content-center py-5">
+        <div
+          className="d-flex justify-content-center "
+          style={{ paddingBottom: 60, paddingTop: 40 }}
+        >
           <h1
             style={{
-              color: "red",
-              fontFamily: "Georgia, serif",
+              color: "#af231c",
             }}
           >
             {" "}
@@ -61,8 +63,9 @@ const Cards = () => {
           </Card>
         </CardDeck>
         <CardDeck as={Col} xs={12} sm={12} md={4} lg={4}>
-          <Card className="mb-2">
+          <Card className=" card__container mb-2">
             <Card.Img
+              component="img"
               style={{
                 height: "250px",
                 objectFit: "contain",
@@ -91,8 +94,9 @@ const Cards = () => {
           </Card>
         </CardDeck>
         <CardDeck as={Col} xs={12} sm={12} md={4} lg={4}>
-          <Card className="mb-2">
+          <Card className=" card__container mb-2">
             <Card.Img
+              component="img"
               style={{
                 height: "250px",
                 objectFit: "contain",

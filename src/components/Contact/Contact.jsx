@@ -4,8 +4,6 @@ import { Row, Col } from "react-bootstrap";
 import HomeIcon from "@material-ui/icons/Home";
 import MailIcon from "@material-ui/icons/Mail";
 import PhoneIcon from "@material-ui/icons/Phone";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import InstagramIcon from "@material-ui/icons/Instagram";
 import GoogleMap from "../GoogleMap/GoogleMap";
 import "./Contact.scss";
 
