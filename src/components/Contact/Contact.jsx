@@ -127,7 +127,7 @@ export default function Contact() {
                 </div>
                 <br />
 
-                <div>
+                <div className="justify-content-lg-start">
                   <MailIcon style={{ fontSize: 50, color: " #af231c" }} />{" "}
                   <span>&nbsp;&nbsp;</span>
                   <i style={{ fontSize: 20, color: " white" }}>
@@ -137,7 +137,7 @@ export default function Contact() {
                 </div>
                 <br />
 
-                <div>
+                <div className="justify-content-lg-start">
                   <PhoneIcon style={{ fontSize: 50, color: " #af231c" }} />{" "}
                   <span>&nbsp;&nbsp;</span>
                   <i style={{ fontSize: 20, color: " white" }}>

@@ -2,14 +2,14 @@ import React from "react";
 import { ListGroup } from "react-bootstrap";
 import { makeStyles, Grid } from "@material-ui/core/";
 import {
-  faVestPatches,
-  faLaptopCode,
-  faHandshake,
-  faGraduationCap,
-  faSuitcaseRolling,
-  faHeadphonesAlt,
-  faRunning,
-  faPaintBrush,
+  faTruckMonster,
+  faDrumSteelpan,
+  faTools,
+  faCar,
+  faInfo,
+  faCarBattery,
+  faTachometerAlt,
+  faOilCan,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -132,10 +132,7 @@ function ServiceList() {
                   name="categories"
                 >
                   <div className="d-flex justify-content-center">
-                    <FontAwesomeIcon
-                      icon={faPaintBrush}
-                      className={classes.icons}
-                    />{" "}
+                    <FontAwesomeIcon icon={faCar} className={classes.icons} />{" "}
                   </div>
                   <div className="d-flex justify-content-center mt-2">
                     <p className={classes.paragraph}>Arts</p>
@@ -151,10 +148,11 @@ function ServiceList() {
                 >
                   <div className="d-flex justify-content-center">
                     <FontAwesomeIcon
-                      icon={faRunning}
+                      icon={faTachometerAlt}
                       className={classes.icons}
                     />
                   </div>
+
                   <div className="d-flex justify-content-center mt-2">
                     <p className={classes.paragraph}>Sports</p>
                   </div>
@@ -169,7 +167,7 @@ function ServiceList() {
                 >
                   <div className="d-flex justify-content-center">
                     <FontAwesomeIcon
-                      icon={faSuitcaseRolling}
+                      icon={faCarBattery}
                       className={classes.icons}
                     />{" "}
                   </div>
@@ -186,10 +184,7 @@ function ServiceList() {
                   name="categories"
                 >
                   <div className="d-flex justify-content-center">
-                    <FontAwesomeIcon
-                      icon={faGraduationCap}
-                      className={classes.icons}
-                    />{" "}
+                    <FontAwesomeIcon icon={faTools} className={classes.icons} />{" "}
                   </div>
                   <div className="d-flex justify-content-center mt-2">
                     <p className={classes.paragraph}>Education</p>
@@ -212,7 +207,7 @@ function ServiceList() {
                 >
                   <div className="d-flex justify-content-center">
                     <FontAwesomeIcon
-                      icon={faHeadphonesAlt}
+                      icon={faOilCan}
                       className={classes.icons}
                     />{" "}
                   </div>
@@ -229,10 +224,7 @@ function ServiceList() {
                   name="categories"
                 >
                   <div className="d-flex justify-content-center">
-                    <FontAwesomeIcon
-                      icon={faLaptopCode}
-                      className={classes.icons}
-                    />
+                    <FontAwesomeIcon icon={faInfo} className={classes.icons} />
                   </div>
                   <div className="d-flex justify-content-center mt-2">
                     <p className={classes.paragraph}>Science</p>
@@ -248,7 +240,7 @@ function ServiceList() {
                 >
                   <div className="d-flex justify-content-center">
                     <FontAwesomeIcon
-                      icon={faHandshake}
+                      icon={faDrumSteelpan}
                       className={classes.icons}
                     />{" "}
                   </div>
@@ -266,7 +258,7 @@ function ServiceList() {
                 >
                   <div className="d-flex justify-content-center">
                     <FontAwesomeIcon
-                      icon={faVestPatches}
+                      icon={faTruckMonster}
                       className={classes.icons}
                     />{" "}
                   </div>

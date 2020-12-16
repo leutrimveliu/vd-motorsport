@@ -1,8 +1,6 @@
 import Carousel from "react-bootstrap/Carousel";
 import i1 from "../../assets/car1.jpg";
 import i2 from "../../assets/car2.jpg";
-import i3 from "../../assets/mercedes.png";
-import i4 from "../../assets/lambo.jpeg";
 import i5 from "../../assets/audi2.jpg";
 import i6 from "../../assets/audi3.jpg";
 import "./Slider.scss";
