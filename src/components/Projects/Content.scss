@@ -1,0 +1,27 @@
+.Content {
+  .card__borders {
+    margin-bottom: 50px;
+    border: 2px white;
+    border-radius: 12px;
+    box-shadow: 5px 5px 20px 0.5px rgb(104, 104, 104);
+    .text__container {
+      .description {
+        color: white;
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Content {
+    .text__container {
+      padding: 50;
+    }
+    .img__container {
+      height: auto;
+      max-width: 100%;
+      vertical-align: top;
+    }
+  }
+}

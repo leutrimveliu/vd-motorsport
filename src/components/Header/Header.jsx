@@ -57,7 +57,7 @@ const Header = () => {
               {/* Projects */}
             </NavLink>
             <NavLink
-              to="/"
+              to="/services"
               className="header__option"
               onClick={() => setExpanded(false)}
             >
@@ -70,7 +70,7 @@ const Header = () => {
               onClick={() => setExpanded(false)}
             >
               {/* Videos */}
-              {t("Videos")}
+              {t("Make an Appointment")}
             </NavLink>
             <NavLink
               to="/contact"
