@@ -16,6 +16,9 @@
     }
   }
 }
+.carousel-indicators {
+  display: none;
+}
 
 .carousel-control-prev {
   @extend %btn-styles;

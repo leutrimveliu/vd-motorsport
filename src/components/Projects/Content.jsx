@@ -25,7 +25,7 @@ function Content() {
         }}
       >
         <Row className="card__borders  ">
-          <Col lg={8} className="text__container ">
+          <Col lg={6} className="text__container ">
             <h3
               className="title d-flex justify-content-start mt-2"
               style={{ color: "#af231c" }}
@@ -41,9 +41,9 @@ function Content() {
               educate visitors, adding value to the user experience.
             </p>
           </Col>
-          <Col lg={4} className="img__container py-2">
+          <Col lg={6} className="img__container pt-4">
             {" "}
-            <Slider style={{ height: "250px", objectFit: "contain" }} />
+            <Slider style={{ height: "250px" }} />
           </Col>
         </Row>
         <Row className="card__borders">
