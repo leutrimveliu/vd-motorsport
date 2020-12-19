@@ -1,93 +1,139 @@
 import React from "react";
-
+import { Tab, Row, ListGroup, Col } from "react-bootstrap";
+import "./Services.scss";
 function Services() {
   return (
-    <div>
-      <div class="row">
-        <div class="col-4">
-          <div class="list-group" id="list-tab" role="tablist">
-            <a
-              class="list-group-item list-group-item-action "
-              id="list-home-list"
-              data-toggle="list"
-              href="#list-home"
-              role="tab"
-              aria-controls="home"
-            >
-              Home
-            </a>
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-profile-list"
-              data-toggle="list"
-              href="#list-profile"
-              role="tab"
-              aria-controls="profile"
-            >
-              Profile
-            </a>
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-messages-list"
-              data-toggle="list"
-              href="#list-messages"
-              role="tab"
-              aria-controls="messages"
-            >
-              Messages
-            </a>
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-settings-list"
-              data-toggle="list"
-              href="#list-settings"
-              role="tab"
-              aria-controls="settings"
-            >
-              Settings
-            </a>
-          </div>
-        </div>
-        <div class="col-8">
-          <div class="tab-content" id="nav-tabContent">
-            <div
-              class="tab-pane fade show "
-              id="list-home"
-              role="tabpanel"
-              aria-labelledby="list-home-list"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores quibusdam earum dolore nulla! Earum itaque error eius
-              provident harum ea molestias aliquam odit nulla aperiam eos,
-              possimus ut quos! Ab?
-            </div>
-            <div
-              class="tab-pane fade"
-              id="list-profile"
-              role="tabpanel"
-              aria-labelledby="list-profile-list"
-            >
-              letrim trlterkngsd, mgskajng
-            </div>
-            <div
-              class="tab-pane fade"
-              id="list-messages"
-              role="tabpanel"
-              aria-labelledby="list-messages-list"
-            >
-              ...
-            </div>
-            <div
-              class="tab-pane fade"
-              id="list-settings"
-              role="tabpanel"
-              aria-labelledby="list-settings-list"
-            >
-              ...
-            </div>
-          </div>
-        </div>
-      </div>
+    <div className="services" style={{ paddingTop: 150 }}>
+      <Tab.Container
+        id="list-group-tabs-example"
+        defaultActiveKey="#link1"
+        className="services__container"
+      >
+        <Row>
+          <Col sm={1}></Col>
+          <Col sm={4}>
+            <ListGroup className="services__titles">
+              <ListGroup.Item action href="#AirConditioning">
+                Air Conditioning
+              </ListGroup.Item>
+              <ListGroup.Item action href="#BatteryServices">
+                Battery Services
+              </ListGroup.Item>
+              <ListGroup.Item action href="#BrakeService">
+                Brake Service and Repair
+              </ListGroup.Item>
+              <ListGroup.Item action href="#EngineDiagnosis">
+                Check Engine Diagnosis
+              </ListGroup.Item>
+              <ListGroup.Item action href="#ClutchServices">
+                Clutch Services
+              </ListGroup.Item>
+              <ListGroup.Item action href="#ComputerDiagnostics">
+                Computer Diagnostics
+              </ListGroup.Item>
+              <ListGroup.Item action href="#EmissionExhaust">
+                Emission & Exhaust
+              </ListGroup.Item>
+              <ListGroup.Item action href="#EngineRepairsReplacement">
+                Engine Repairs and Replacement
+              </ListGroup.Item>
+              <ListGroup.Item action href="#FuelInjectionServices">
+                Fuel Injection Services
+              </ListGroup.Item>
+              <ListGroup.Item action href="#RadiatorServicesEngineCooling">
+                Radiator Services & Engine Cooling
+              </ListGroup.Item>
+              <ListGroup.Item action href="#SteeringaSuspension">
+                Steering and Suspension
+              </ListGroup.Item>
+              <ListGroup.Item action href="#TireRepairs">
+                Tire Repairs
+              </ListGroup.Item>
+              <ListGroup.Item action href="#TransmissionServiceandRepair">
+                Transmission Service and Repair
+              </ListGroup.Item>
+              <ListGroup.Item action href="#WheelBalancing">
+                Wheel Balancing
+              </ListGroup.Item>
+            </ListGroup>
+          </Col>
+          <Col sm={6}>
+            <Tab.Content className="services__description">
+              <Tab.Pane eventKey="#AirConditioning">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                quidem facilis, provident, cumque dolore vero rem obcaecati
+                numquam beatae fugit nulla esse est laborum? Repudiandae
+                mollitia at debitis tempore corrupti?
+              </Tab.Pane>
+              <Tab.Pane eventKey="#BatteryServices">
+                cumque dolore vero rem obcaecati numquam beatae fugit nulla esse
+                est laborum? Repudiandae mollitia at debitis tempore corrupti?
+              </Tab.Pane>
+              <Tab.Pane eventKey="#BrakeService">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                quidem facilis, provident, cumque dolore vero rem obcaecati
+                numquam beatae fugit nulla esse est laborum? Repudiandae
+                mollitia at debitis tempore corrupti?
+              </Tab.Pane>
+              <Tab.Pane eventKey="#EngineDiagnosis">
+                cumque dolore vero rem obcaecati numquam beatae fugit nulla esse
+                est laborum? Repudiandae mollitia at debitis tempore corrupti?
+              </Tab.Pane>
+              <Tab.Pane eventKey="#ClutchServices">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                quidem facilis, provident, cumque dolore vero rem obcaecati
+                numquam beatae fugit nulla esse est laborum? Repudiandae
+                mollitia at debitis tempore corrupti?
+              </Tab.Pane>
+              <Tab.Pane eventKey="#ComputerDiagnostics">
+                cumque dolore vero rem obcaecati numquam beatae fugit nulla esse
+                est laborum? Repudiandae mollitia at debitis tempore corrupti?
+              </Tab.Pane>
+              <Tab.Pane eventKey="#EmissionExhaust">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                quidem facilis, provident, cumque dolore vero rem obcaecati
+                numquam beatae fugit nulla esse est laborum? Repudiandae
+                mollitia at debitis tempore corrupti?
+              </Tab.Pane>
+              <Tab.Pane eventKey="#EngineRepairsReplacement">
+                cumque dolore vero rem obcaecati numquam beatae fugit nulla esse
+                est laborum? Repudiandae mollitia at debitis tempore corrupti?
+              </Tab.Pane>
+              <Tab.Pane eventKey="#FuelInjectionServices">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                quidem facilis, provident, cumque dolore vero rem obcaecati
+                numquam beatae fugit nulla esse est laborum? Repudiandae
+                mollitia at debitis tempore corrupti?
+              </Tab.Pane>
+              <Tab.Pane eventKey="#RadiatorServicesEngineCooling">
+                cumque dolore vero rem obcaecati numquam beatae fugit nulla esse
+                est laborum? Repudiandae mollitia at debitis tempore corrupti?
+              </Tab.Pane>
+              <Tab.Pane eventKey="#SteeringaSuspension">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                quidem facilis, provident, cumque dolore vero rem obcaecati
+                numquam beatae fugit nulla esse est laborum? Repudiandae
+                mollitia at debitis tempore corrupti?
+              </Tab.Pane>
+              <Tab.Pane eventKey="#TireRepairs">
+                cumque dolore vero rem obcaecati numquam beatae fugit nulla esse
+                est laborum? Repudiandae mollitia at debitis tempore corrupti?
+              </Tab.Pane>
+              <Tab.Pane eventKey="#TransmissionServiceandRepair">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                quidem facilis, provident, cumque dolore vero rem obcaecati
+                numquam beatae fugit nulla esse est laborum? Repudiandae
+                mollitia at debitis tempore corrupti?
+              </Tab.Pane>
+              <Tab.Pane eventKey="#WheelBalancing">
+                cumque dolore vero rem obcaecati numquam beatae fugit nulla esse
+                est laborum? Repudiandae mollitia at debitis tempore corrupti?
+              </Tab.Pane>
+            </Tab.Content>
+          </Col>
+          <Col sm={1}></Col>
+        </Row>
+      </Tab.Container>
     </div>
   );
 }
