@@ -9,14 +9,9 @@ import "./SliderProjects.scss";
 function SliderProjects() {
   return (
     <div>
-      <Carousel
-        autoPlay={true}
-        interval={7000}
-        controls={true}
-        style={{ marginTop: 89 }}
-      >
+      <Carousel autoPlay={true} interval={7000} controls={true}>
         <Carousel.Item>
-          <img className="d-block w-100" src={i1} alt="First slide" />
+          <img className="d-block " width="300px" src={i1} alt="First slide" />
           <Carousel.Caption>
             <h3>First slide label</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -24,14 +19,14 @@ function SliderProjects() {
         </Carousel.Item>
 
         <Carousel.Item>
-          <img className="d-block w-100" src={i2} alt="Third slide" />
+          <img className="d-block " width="300px" src={i2} alt="Third slide" />
           <Carousel.Caption>
             <h3>Second slide label</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src={i6} alt="Third slide" />
+          <img className="d-block" width="300px" src={i6} alt="Third slide" />
           <Carousel.Caption>
             <h3>Third slide label</h3>
             <p>
@@ -40,7 +35,7 @@ function SliderProjects() {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src={i5} alt="Third slide" />
+          <img className="d-block " width="300px" src={i5} alt="Third slide" />
           <Carousel.Caption>
             <h3>Third slide label</h3>
             <p>

@@ -1,10 +1,50 @@
 .services {
   overflow-x: hidden;
-
-  .services__titles {
-    color: brown;
-  }
   .services__description {
-    color: white;
+    .services__titles {
+      color: #af231c;
+      text-align: left;
+    }
+    .services__paragraph {
+      color: white;
+      text-align: left;
+    }
+  }
+}
+.list-group-item {
+  color: white;
+  background-color: black;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+}
+.list-group-item.active {
+  background-color: #af231c;
+  border-color: #ffffff;
+}
+.list-group-item:hover {
+  background-color: #af231c;
+  color: white;
+  // border-color: #ffffff;
+  font-weight: bold;
+  // background-color: #ffffff;
+  // color: rgb(0, 0, 0);
+  border-color: #ffffff;
+}
+.list-group-item:first-child {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.list-group-item:last-child {
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+@media only screen and (max-width: 600px) {
+  .services__description {
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .img {
+    width: 100%;
   }
 }

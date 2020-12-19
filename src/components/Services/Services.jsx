@@ -1,18 +1,35 @@
 import React from "react";
 import { Tab, Row, ListGroup, Col } from "react-bootstrap";
 import "./Services.scss";
+import aircondition from "../../assets/airconditioning.jpg";
+import battery from "../../assets/battery.jpg";
+import brake from "../../assets/brake.jpg";
+import engined from "../../assets/engined.jpg";
+import clutch from "../../assets/clutch.jpg";
+import emission from "../../assets/emission.jpg";
+import motor from "../../assets/motor.jpeg";
+import fuel from "../../assets/fuel.jpg";
+import steering from "../../assets/steering.jpg";
+import tyre from "../../assets/tyre.jpg";
+import transmission from "../../assets/transmission.jpg";
+
 function Services() {
+  if (window.matchMedia("(max-width: 600px)").matches) {
+    // do functionality on screens smaller than 600px
+    window.scrollTo(0, 500);
+  }
+
   return (
     <div className="services" style={{ paddingTop: 150 }}>
       <Tab.Container
         id="list-group-tabs-example"
-        defaultActiveKey="#link1"
+        defaultActiveKey="#AirConditioning"
         className="services__container"
       >
         <Row>
           <Col sm={1}></Col>
           <Col sm={4}>
-            <ListGroup className="services__titles">
+            <ListGroup className="services__types">
               <ListGroup.Item action href="#AirConditioning">
                 Air Conditioning
               </ListGroup.Item>
@@ -21,9 +38,6 @@ function Services() {
               </ListGroup.Item>
               <ListGroup.Item action href="#BrakeService">
                 Brake Service and Repair
-              </ListGroup.Item>
-              <ListGroup.Item action href="#EngineDiagnosis">
-                Check Engine Diagnosis
               </ListGroup.Item>
               <ListGroup.Item action href="#ClutchServices">
                 Clutch Services
@@ -40,94 +54,192 @@ function Services() {
               <ListGroup.Item action href="#FuelInjectionServices">
                 Fuel Injection Services
               </ListGroup.Item>
-              <ListGroup.Item action href="#RadiatorServicesEngineCooling">
-                Radiator Services & Engine Cooling
-              </ListGroup.Item>
               <ListGroup.Item action href="#SteeringaSuspension">
                 Steering and Suspension
-              </ListGroup.Item>
-              <ListGroup.Item action href="#TireRepairs">
-                Tire Repairs
               </ListGroup.Item>
               <ListGroup.Item action href="#TransmissionServiceandRepair">
                 Transmission Service and Repair
               </ListGroup.Item>
-              <ListGroup.Item action href="#WheelBalancing">
-                Wheel Balancing
+              <ListGroup.Item action href="#TireRepairs">
+                Wheel Balancing & Tire Repairs
               </ListGroup.Item>
             </ListGroup>
           </Col>
           <Col sm={6}>
             <Tab.Content className="services__description">
               <Tab.Pane eventKey="#AirConditioning">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                quidem facilis, provident, cumque dolore vero rem obcaecati
-                numquam beatae fugit nulla esse est laborum? Repudiandae
-                mollitia at debitis tempore corrupti?
+                <h2 className="services__titles">Air Conditioning</h2>
+                <p className="services__paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  quidem facilis, provident, cumque dolore vero rem obcaecati
+                  numquam beatae fugit nulla esse est laborum? Repudiandae
+                  mollitia at debitis tempore corrupti?
+                </p>
+                <img
+                  src={aircondition}
+                  className="img"
+                  alt=""
+                  style={{ height: "400px", objectFit: "contain" }}
+                />
               </Tab.Pane>
               <Tab.Pane eventKey="#BatteryServices">
-                cumque dolore vero rem obcaecati numquam beatae fugit nulla esse
-                est laborum? Repudiandae mollitia at debitis tempore corrupti?
+                <h2 className="services__titles">Battery Services</h2>
+                <p className="services__paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  quidem facilis, provident, cumque dolore vero rem obcaecati
+                  numquam beatae fugit nulla esse est laborum? Repudiandae
+                  mollitia at debitis tempore corrupti?
+                </p>
+                <img
+                  src={battery}
+                  className="img"
+                  alt=""
+                  style={{ height: "400px", objectFit: "contain" }}
+                />
               </Tab.Pane>
               <Tab.Pane eventKey="#BrakeService">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                quidem facilis, provident, cumque dolore vero rem obcaecati
-                numquam beatae fugit nulla esse est laborum? Repudiandae
-                mollitia at debitis tempore corrupti?
-              </Tab.Pane>
-              <Tab.Pane eventKey="#EngineDiagnosis">
-                cumque dolore vero rem obcaecati numquam beatae fugit nulla esse
-                est laborum? Repudiandae mollitia at debitis tempore corrupti?
-              </Tab.Pane>
-              <Tab.Pane eventKey="#ClutchServices">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                quidem facilis, provident, cumque dolore vero rem obcaecati
-                numquam beatae fugit nulla esse est laborum? Repudiandae
-                mollitia at debitis tempore corrupti?
+                <h2 className="services__titles">Brake Services</h2>
+                <p className="services__paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  quidem facilis, provident, cumque dolore vero rem obcaecati
+                  numquam beatae fugit nulla esse est laborum? Repudiandae
+                  mollitia at debitis tempore corrupti?
+                </p>
+                <img
+                  className="img"
+                  src={brake}
+                  alt=""
+                  style={{ height: "400px", objectFit: "contain" }}
+                />
               </Tab.Pane>
               <Tab.Pane eventKey="#ComputerDiagnostics">
-                cumque dolore vero rem obcaecati numquam beatae fugit nulla esse
-                est laborum? Repudiandae mollitia at debitis tempore corrupti?
+                <h2 className="services__titles">Computer Diagnostics</h2>
+                <p className="services__paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  quidem facilis, provident, cumque dolore vero rem obcaecati
+                  numquam beatae fugit nulla esse est laborum? Repudiandae
+                  mollitia at debitis tempore corrupti?
+                </p>
+                <img
+                  className="img"
+                  src={engined}
+                  alt=""
+                  style={{ height: "400px", objectFit: "contain" }}
+                />
               </Tab.Pane>
+              <Tab.Pane eventKey="#ClutchServices">
+                <h2 className="services__titles">Clutch Services</h2>
+                <p className="services__paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  quidem facilis, provident, cumque dolore vero rem obcaecati
+                  numquam beatae fugit nulla esse est laborum? Repudiandae
+                  mollitia at debitis tempore corrupti?
+                </p>
+                <img
+                  className="img"
+                  src={clutch}
+                  alt=""
+                  style={{ height: "400px", objectFit: "contain" }}
+                />
+              </Tab.Pane>
+
               <Tab.Pane eventKey="#EmissionExhaust">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                quidem facilis, provident, cumque dolore vero rem obcaecati
-                numquam beatae fugit nulla esse est laborum? Repudiandae
-                mollitia at debitis tempore corrupti?
+                <h2 className="services__titles">
+                  Emission & Exhaust System Services
+                </h2>
+                <p className="services__paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  quidem facilis, provident, cumque dolore vero rem obcaecati
+                  numquam beatae fugit nulla esse est laborum? Repudiandae
+                  mollitia at debitis tempore corrupti?
+                </p>
+                <img
+                  className="img"
+                  src={emission}
+                  alt=""
+                  style={{ height: "400px", objectFit: "contain" }}
+                />
               </Tab.Pane>
               <Tab.Pane eventKey="#EngineRepairsReplacement">
-                cumque dolore vero rem obcaecati numquam beatae fugit nulla esse
-                est laborum? Repudiandae mollitia at debitis tempore corrupti?
+                <h2 className="services__titles">
+                  Engine Repairs & Replacement
+                </h2>
+                <p className="services__paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  quidem facilis, provident, cumque dolore vero rem obcaecati
+                  numquam beatae fugit nulla esse est laborum? Repudiandae
+                  mollitia at debitis tempore corrupti?
+                </p>
+                <img
+                  className="img"
+                  src={motor}
+                  alt=""
+                  style={{ height: "400px", objectFit: "contain" }}
+                />
               </Tab.Pane>
               <Tab.Pane eventKey="#FuelInjectionServices">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                quidem facilis, provident, cumque dolore vero rem obcaecati
-                numquam beatae fugit nulla esse est laborum? Repudiandae
-                mollitia at debitis tempore corrupti?
-              </Tab.Pane>
-              <Tab.Pane eventKey="#RadiatorServicesEngineCooling">
-                cumque dolore vero rem obcaecati numquam beatae fugit nulla esse
-                est laborum? Repudiandae mollitia at debitis tempore corrupti?
+                <h2 className="services__titles">Fuel Injection Services</h2>
+                <p className="services__paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  quidem facilis, provident, cumque dolore vero rem obcaecati
+                  numquam beatae fugit nulla esse est laborum? Repudiandae
+                  mollitia at debitis tempore corrupti?
+                </p>
+                <img
+                  className="img"
+                  src={fuel}
+                  alt=""
+                  style={{ height: "400px", objectFit: "contain" }}
+                />
               </Tab.Pane>
               <Tab.Pane eventKey="#SteeringaSuspension">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                quidem facilis, provident, cumque dolore vero rem obcaecati
-                numquam beatae fugit nulla esse est laborum? Repudiandae
-                mollitia at debitis tempore corrupti?
+                <h2 className="services__titles">Steering & Suspension</h2>
+                <p className="services__paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  quidem facilis, provident, cumque dolore vero rem obcaecati
+                  numquam beatae fugit nulla esse est laborum? Repudiandae
+                  mollitia at debitis tempore corrupti?
+                </p>
+                <img
+                  className="img"
+                  src={steering}
+                  alt=""
+                  style={{ height: "400px", objectFit: "contain" }}
+                />
               </Tab.Pane>
               <Tab.Pane eventKey="#TireRepairs">
-                cumque dolore vero rem obcaecati numquam beatae fugit nulla esse
-                est laborum? Repudiandae mollitia at debitis tempore corrupti?
+                <h2 className="services__titles">
+                  Wheel Balancing & Tire Repairs
+                </h2>
+                <p className="services__paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  quidem facilis, provident, cumque dolore vero rem obcaecati
+                  numquam beatae fugit nulla esse est laborum? Repudiandae
+                  mollitia at debitis tempore corrupti?
+                </p>
+                <img
+                  className="img"
+                  src={tyre}
+                  alt=""
+                  style={{ height: "400px", objectFit: "contain" }}
+                />
               </Tab.Pane>
               <Tab.Pane eventKey="#TransmissionServiceandRepair">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                quidem facilis, provident, cumque dolore vero rem obcaecati
-                numquam beatae fugit nulla esse est laborum? Repudiandae
-                mollitia at debitis tempore corrupti?
-              </Tab.Pane>
-              <Tab.Pane eventKey="#WheelBalancing">
-                cumque dolore vero rem obcaecati numquam beatae fugit nulla esse
-                est laborum? Repudiandae mollitia at debitis tempore corrupti?
+                <h2 className="services__titles">
+                  Transmission Service and Repair
+                </h2>
+                <p className="services__paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  quidem facilis, provident, cumque dolore vero rem obcaecati
+                  numquam beatae fugit nulla esse est laborum? Repudiandae
+                  mollitia at debitis tempore corrupti?
+                </p>
+                <img
+                  className="img"
+                  src={transmission}
+                  alt=""
+                  style={{ height: "400px", objectFit: "contain" }}
+                />
               </Tab.Pane>
             </Tab.Content>
           </Col>

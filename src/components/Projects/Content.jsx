@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import motor from "../../assets/motor.jpeg";
 import i5 from "../../assets/audi2.jpg";
+import Slider from "./SliderProjects";
 
 import "./Content.scss";
 
@@ -42,12 +43,7 @@ function Content() {
           </Col>
           <Col lg={4} className="img__container py-2">
             {" "}
-            <img
-              src={motor}
-              alt=""
-              srcset=""
-              style={{ height: "250px", objectFit: "contain" }}
-            />
+            <Slider style={{ height: "250px", objectFit: "contain" }} />
           </Col>
         </Row>
         <Row className="card__borders">
