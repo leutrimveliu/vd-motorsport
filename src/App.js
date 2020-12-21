@@ -6,6 +6,8 @@ import Contact from "../src/components/Contact/Contact";
 import Home from "../src/components/Home/Home";
 import Projects from "../src/components/Projects/Projects";
 import Services from "../src/components/Services/Services";
+import About from "../src/components/About/About";
+import Appointment from "../src/components/Appointment/Appointment";
 
 import "./App.css";
 
@@ -19,6 +21,8 @@ function App() {
           <Route path="/contact" component={Contact} />
           <Route path="/projects" component={Projects} />
           <Route path="/services" component={Services} />
+          <Route path="/appointment" component={Appointment} />
+          <Route path="/about" component={About} />
         </Switch>
         <Footer />
       </Router>

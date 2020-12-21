@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+
 import emailjs from "emailjs-com";
 import { Row, Col } from "react-bootstrap";
 import HomeIcon from "@material-ui/icons/Home";
@@ -30,6 +31,9 @@ export default function Contact() {
 
     e.target.reset();
   }
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>

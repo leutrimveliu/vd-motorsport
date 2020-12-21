@@ -62,7 +62,13 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     backgroundColor: "black",
     border: "none",
-    "&:hover": { textDecoration: "none", color: "#af231c", cursor: "pointer" },
+    textDecoration: "none",
+    "&:hover": {
+      textDecoration: "none",
+      color: "#af231c",
+      cursor: "pointer",
+      backgroundColor: "black",
+    },
   },
   favContainer: {
     [theme.breakpoints.down(600)]: {
@@ -135,7 +141,7 @@ function ServiceList() {
                     <FontAwesomeIcon icon={faCar} className={classes.icons} />{" "}
                   </div>
                   <div className="d-flex justify-content-center mt-2">
-                    <p className={classes.paragraph}>Arts</p>
+                    <p className={classes.paragraph}>Vehicle</p>
                   </div>
                 </ListGroup.Item>
               </Grid>
@@ -154,7 +160,7 @@ function ServiceList() {
                   </div>
 
                   <div className="d-flex justify-content-center mt-2">
-                    <p className={classes.paragraph}>Sports</p>
+                    <p className={classes.paragraph}>Speed</p>
                   </div>
                 </ListGroup.Item>
               </Grid>
@@ -172,7 +178,7 @@ function ServiceList() {
                     />{" "}
                   </div>
                   <div className="d-flex justify-content-center mt-2">
-                    <p className={classes.paragraph}>Travel</p>
+                    <p className={classes.paragraph}>Battery</p>
                   </div>
                 </ListGroup.Item>
               </Grid>
@@ -187,7 +193,7 @@ function ServiceList() {
                     <FontAwesomeIcon icon={faTools} className={classes.icons} />{" "}
                   </div>
                   <div className="d-flex justify-content-center mt-2">
-                    <p className={classes.paragraph}>Education</p>
+                    <p className={classes.paragraph}>Service</p>
                   </div>
                 </ListGroup.Item>
               </Grid>
@@ -212,7 +218,7 @@ function ServiceList() {
                     />{" "}
                   </div>
                   <div className="d-flex justify-content-center mt-2">
-                    <p className={classes.paragraph}>Music</p>
+                    <p className={classes.paragraph}>Engine</p>
                   </div>
                 </ListGroup.Item>
               </Grid>
@@ -227,7 +233,7 @@ function ServiceList() {
                     <FontAwesomeIcon icon={faInfo} className={classes.icons} />
                   </div>
                   <div className="d-flex justify-content-center mt-2">
-                    <p className={classes.paragraph}>Science</p>
+                    <p className={classes.paragraph}>Info</p>
                   </div>
                 </ListGroup.Item>
               </Grid>
@@ -245,7 +251,7 @@ function ServiceList() {
                     />{" "}
                   </div>
                   <div className="d-flex justify-content-center mt-2">
-                    <p className={classes.paragraph}>Politics</p>
+                    <p className={classes.paragraph}>Tire</p>
                   </div>
                 </ListGroup.Item>
               </Grid>
@@ -263,7 +269,7 @@ function ServiceList() {
                     />{" "}
                   </div>
                   <div className="d-flex justify-content-center mt-2">
-                    <p className={classes.paragraph}>Fashion</p>
+                    <p className={classes.paragraph}>Beast</p>
                   </div>
                 </ListGroup.Item>
               </Grid>

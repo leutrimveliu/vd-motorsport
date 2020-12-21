@@ -1,0 +1,38 @@
+.appointment {
+  .form-group {
+    input[type="text"] {
+      background-color: #000000;
+      color: white;
+    }
+    input[type="email"] {
+      background-color: #000000;
+      color: white;
+    }
+    input[type="number"] {
+      background-color: #000000;
+      color: white;
+    }
+    input[type="date"] {
+      background-color: #000000;
+      color: white;
+    }
+    input[type="time"] {
+      background-color: #000000;
+      color: white;
+    }
+    textarea {
+      background-color: #000000;
+      color: white;
+    }
+  }
+  .Link__Edit {
+    color: white;
+    text-decoration: none;
+  }
+}
+.form-control::-webkit-input-placeholder {
+  color: #afafaf;
+}
+.form-control::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}

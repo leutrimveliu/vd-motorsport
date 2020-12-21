@@ -13,7 +13,7 @@ function SliderProjects() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            style={{ height: "150px", objectFit: "contain" }}
+            style={{ objectFit: "contain" }}
             src={i1}
             alt="First slide"
           />
@@ -21,7 +21,7 @@ function SliderProjects() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            style={{ height: "150px", objectFit: "contain" }}
+            style={{ objectFit: "contain" }}
             src={i2}
             alt="Third slide"
           />
@@ -29,7 +29,7 @@ function SliderProjects() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            style={{ height: "150px", objectFit: "contain" }}
+            style={{ objectFit: "contain" }}
             src={i6}
             alt="Third slide"
           />
@@ -37,7 +37,7 @@ function SliderProjects() {
         <Carousel.Item>
           <img
             className="d-block w-100 "
-            style={{ height: "150px", objectFit: "contain" }}
+            style={{ objectFit: "contain" }}
             src={i5}
             alt="Third slide"
           />

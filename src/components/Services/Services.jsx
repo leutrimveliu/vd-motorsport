@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Tab, Row, ListGroup, Col } from "react-bootstrap";
 import "./Services.scss";
 import aircondition from "../../assets/airconditioning.jpg";
@@ -12,12 +12,15 @@ import fuel from "../../assets/fuel.jpg";
 import steering from "../../assets/steering.jpg";
 import tyre from "../../assets/tyre.jpg";
 import transmission from "../../assets/transmission.jpg";
-
+import chip from "../../assets/chip.jpg";
 function Services() {
   if (window.matchMedia("(max-width: 600px)").matches) {
     // do functionality on screens smaller than 600px
     window.scrollTo(0, 500);
   }
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="services" style={{ paddingTop: 150 }}>
@@ -38,6 +41,9 @@ function Services() {
               </ListGroup.Item>
               <ListGroup.Item action href="#BrakeService">
                 Brake Service and Repair
+              </ListGroup.Item>
+              <ListGroup.Item action href="#ChipTuning">
+                Chip Tuning
               </ListGroup.Item>
               <ListGroup.Item action href="#ClutchServices">
                 Clutch Services
@@ -123,6 +129,21 @@ function Services() {
                 <img
                   className="img"
                   src={engined}
+                  alt=""
+                  style={{ height: "400px", objectFit: "contain" }}
+                />
+              </Tab.Pane>
+              <Tab.Pane eventKey="#ChipTuning">
+                <h2 className="services__titles">Chip Tuning</h2>
+                <p className="services__paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  quidem facilis, provident, cumque dolore vero rem obcaecati
+                  numquam beatae fugit nulla esse est laborum? Repudiandae
+                  mollitia at debitis tempore corrupti?
+                </p>
+                <img
+                  className="img"
+                  src={chip}
                   alt=""
                   style={{ height: "400px", objectFit: "contain" }}
                 />
