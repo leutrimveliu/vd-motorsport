@@ -22,9 +22,9 @@ const Cards = ({
   return (
     <Card className="card">
       <Card.Img className="card__image" variant="top" src={imageUrl} />
-      <Card.Body>
+      <Card.Body className="card__content">
         <Card.Title className="card__title">{name}</Card.Title>
-        <Card.Text>{info}</Card.Text>
+        <Card.Text className="card__work">{info}</Card.Text>
         <a href={linkUrlOne} target="_blank" rel="noreferrer">
           <FontAwesomeIcon
             className="card__icon"

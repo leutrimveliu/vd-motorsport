@@ -100,21 +100,28 @@ export default function Contact() {
             </form>
           </Col>
           <Col lg={6} md={12}>
-            <div className="row d-flex justify-content-center my-3">
+            <div className="row d-flex justify-content-center  my-3">
               <div className="col-8 justify-content-center " style={{}}>
                 <h3 style={{ color: "#af231c" }}>Get in touch with us</h3>
               </div>
-              <div className="col-8 mt-5 d-flex align-items-start flex-column">
-                <div className="justify-content-lg-start">
-                  {" "}
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://www.google.com/maps/dir/?api=1&destination=47.394526499386%2C8.6548459023979&fbclid=IwAR1iJquZTbwn_uPjsUfgxtDCwm8pBBeWc4mwMXLS1K7NV4QHs7TIQXV4LTk"
-                    className="Link__Edit"
-                  >
-                    <HomeIcon style={{ fontSize: 50, color: " #af231c" }} />{" "}
-                    <span>&nbsp;&nbsp;</span>
+              <div className=" col-8 mt-5 d-flex flex-column">
+                {" "}
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.google.com/maps/dir/?api=1&destination=47.394526499386%2C8.6548459023979&fbclid=IwAR1iJquZTbwn_uPjsUfgxtDCwm8pBBeWc4mwMXLS1K7NV4QHs7TIQXV4LTk"
+                  className=" Link__Edit"
+                >
+                  <div className="row mb-3">
+                    <div className="col-2 col-md-2">
+                      {" "}
+                      <HomeIcon
+                        className="justify-content-lg-start home__icon"
+                        style={{ fontSize: 50, color: " #af231c" }}
+                      />{" "}
+                    </div>
+
+                    {/* <span>&nbsp;&nbsp;</span> */}
                     {/* <span
                     style={{
                       fontSize: 20,
@@ -123,31 +130,57 @@ export default function Contact() {
                   >
                     Heidenrietstrasse 10 8600 Dübendorf, Switzerland
                   </span> */}
-                    <i style={{ fontSize: 18, color: " white" }}>
+                    <div
+                      className="col-10 col-md-10 home__desc"
+                      style={{
+                        fontSize: 18,
+                        color: " white",
+                        textAlign: "left",
+                      }}
+                    >
                       {" "}
-                      Heidenrietstrasse 10 8600 Dübendorf, Switzerland
-                    </i>
-                  </a>{" "}
-                </div>
+                      Heidenrietstrasse 10 8600 Dübendorf, Switzerland{" "}
+                    </div>
+                  </div>
+                </a>{" "}
                 <br />
-
-                <div className="justify-content-lg-start">
-                  <MailIcon style={{ fontSize: 50, color: " #af231c" }} />{" "}
-                  <span>&nbsp;&nbsp;</span>
-                  <i style={{ fontSize: 20, color: " white" }}>
-                    {" "}
-                    ecutechvelija@hotmail.com
-                  </i>
+                <div className="row d-flex mt-3  mb-3">
+                  <div className="mail col-2 col-md-2">
+                    <MailIcon
+                      className="mail__icons"
+                      style={{ fontSize: 50, color: " #af231c" }}
+                    />{" "}
+                  </div>
+                  <div className="mail col-10 col-md-10">
+                    <p
+                      className="home__desc"
+                      style={{
+                        fontSize: 20,
+                        color: " white",
+                        textAlign: "left",
+                        paddingTop: 5,
+                      }}
+                    >
+                      ecutechvelija@hotmail.com{" "}
+                    </p>
+                  </div>
                 </div>
-                <br />
-
-                <div className="justify-content-lg-start">
-                  <PhoneIcon style={{ fontSize: 50, color: " #af231c" }} />{" "}
-                  <span>&nbsp;&nbsp;</span>
-                  <i style={{ fontSize: 20, color: " white" }}>
-                    {" "}
-                    +41 76 330 76 82{" "}
-                  </i>
+                <div className="row mt-3">
+                  <div className="col-2 col-md-2">
+                    <PhoneIcon style={{ fontSize: 50, color: " #af231c" }} />{" "}
+                  </div>
+                  <div className="col-10 col-md-10">
+                    <p
+                      style={{
+                        fontSize: 20,
+                        color: " white",
+                        textAlign: "left",
+                      }}
+                    >
+                      {" "}
+                      +41 76 330 76 82{" "}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

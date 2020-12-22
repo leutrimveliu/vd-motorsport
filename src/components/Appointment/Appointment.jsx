@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import emailjs from "emailjs-com";
 import "./Appointment.scss";
+import vdbenz from "../../assets/vdbenz.png";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 
 function Appointment() {
@@ -33,10 +34,22 @@ function Appointment() {
   return (
     <div className="appointment" style={{ marginTop: 89 }}>
       {" "}
-      <Container lg={8}>
+      <Container lg={12}>
         <Row className="row m-0 d-flex justify-content-center">
-          {/* <Col lg={6} md={12}></Col> */}
-          <Col lg={6} md={12}>
+          <Col lg={5} md={12}>
+            <div className=" d-flex justify-content-center">
+              <img
+                className="appointment__image"
+                src={vdbenz}
+                style={{ width: "110%" }}
+                alt=""
+                srcset=""
+              />
+            </div>
+          </Col>
+          <Col lg={1} md={12}></Col>
+
+          <Col lg={5} md={12}>
             <div className=" d-flex justify-content-center my-3">
               <h3 style={{ color: "#af231c" }}>Request an Appointment</h3>
             </div>

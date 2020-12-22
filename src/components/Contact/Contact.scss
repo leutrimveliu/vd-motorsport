@@ -18,3 +18,25 @@
     text-decoration: none;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .contact__container {
+    .Link__Edit {
+      .home__icon {
+        width: 35px;
+      }
+      .home__desc {
+        font-size: 5px;
+      }
+    }
+
+    .mail {
+      .mail__icons {
+        width: 35px;
+      }
+      .home__desc {
+        font-size: 5px;
+      }
+    }
+  }
+}

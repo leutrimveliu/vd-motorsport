@@ -9,18 +9,25 @@
       transform: scale(1.07);
     }
   }
+  .card-body {
+    background-color: black;
+  }
 
   .card__title {
     font-weight: bold;
+    color: #af231c;
+  }
+  .card__work {
+    color: white;
   }
 
   .card__icon {
     margin: 10px;
-    color: #3b5998;
+    color: white;
     cursor: pointer;
 
     &:hover {
-      color: #24365e;
+      color: #af231c;
     }
   }
 }
