@@ -74,12 +74,12 @@ function Services() {
           <Col sm={6}>
             <Tab.Content className="services__description">
               <Tab.Pane eventKey="#AirConditioning">
-                <h2 className="services__titles">Air Conditioning</h2>
+                <h2 className="services__titles ">Air Conditioning</h2>
                 <p className="services__paragraph">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                   quidem facilis, provident, cumque dolore vero rem obcaecati
                   numquam beatae fugit nulla esse est laborum? Repudiandae
-                  mollitia at debitis tempore corrupti?
+                  mollitia at debitis tempore corrupti? */}
                 </p>
                 <img
                   src={aircondition}
@@ -91,10 +91,10 @@ function Services() {
               <Tab.Pane eventKey="#BatteryServices">
                 <h2 className="services__titles">Battery Services</h2>
                 <p className="services__paragraph">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                   quidem facilis, provident, cumque dolore vero rem obcaecati
                   numquam beatae fugit nulla esse est laborum? Repudiandae
-                  mollitia at debitis tempore corrupti?
+                  mollitia at debitis tempore corrupti? */}
                 </p>
                 <img
                   src={battery}
@@ -106,10 +106,10 @@ function Services() {
               <Tab.Pane eventKey="#BrakeService">
                 <h2 className="services__titles">Brake Services</h2>
                 <p className="services__paragraph">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                   quidem facilis, provident, cumque dolore vero rem obcaecati
                   numquam beatae fugit nulla esse est laborum? Repudiandae
-                  mollitia at debitis tempore corrupti?
+                  mollitia at debitis tempore corrupti? */}
                 </p>
                 <img
                   className="img"
@@ -121,10 +121,10 @@ function Services() {
               <Tab.Pane eventKey="#ComputerDiagnostics">
                 <h2 className="services__titles">Computer Diagnostics</h2>
                 <p className="services__paragraph">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                   quidem facilis, provident, cumque dolore vero rem obcaecati
                   numquam beatae fugit nulla esse est laborum? Repudiandae
-                  mollitia at debitis tempore corrupti?
+                  mollitia at debitis tempore corrupti? */}
                 </p>
                 <img
                   className="img"
@@ -136,10 +136,10 @@ function Services() {
               <Tab.Pane eventKey="#ChipTuning">
                 <h2 className="services__titles">Chip Tuning</h2>
                 <p className="services__paragraph">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                   quidem facilis, provident, cumque dolore vero rem obcaecati
                   numquam beatae fugit nulla esse est laborum? Repudiandae
-                  mollitia at debitis tempore corrupti?
+                  mollitia at debitis tempore corrupti? */}
                 </p>
                 <img
                   className="img"
@@ -151,10 +151,10 @@ function Services() {
               <Tab.Pane eventKey="#ClutchServices">
                 <h2 className="services__titles">Clutch Services</h2>
                 <p className="services__paragraph">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                   quidem facilis, provident, cumque dolore vero rem obcaecati
                   numquam beatae fugit nulla esse est laborum? Repudiandae
-                  mollitia at debitis tempore corrupti?
+                  mollitia at debitis tempore corrupti? */}
                 </p>
                 <img
                   className="img"
@@ -169,10 +169,10 @@ function Services() {
                   Emission & Exhaust System Services
                 </h2>
                 <p className="services__paragraph">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                   quidem facilis, provident, cumque dolore vero rem obcaecati
                   numquam beatae fugit nulla esse est laborum? Repudiandae
-                  mollitia at debitis tempore corrupti?
+                  mollitia at debitis tempore corrupti? */}
                 </p>
                 <img
                   className="img"
@@ -186,10 +186,10 @@ function Services() {
                   Engine Repairs & Replacement
                 </h2>
                 <p className="services__paragraph">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                   quidem facilis, provident, cumque dolore vero rem obcaecati
                   numquam beatae fugit nulla esse est laborum? Repudiandae
-                  mollitia at debitis tempore corrupti?
+                  mollitia at debitis tempore corrupti? */}
                 </p>
                 <img
                   className="img"
@@ -201,10 +201,10 @@ function Services() {
               <Tab.Pane eventKey="#FuelInjectionServices">
                 <h2 className="services__titles">Fuel Injection Services</h2>
                 <p className="services__paragraph">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                   quidem facilis, provident, cumque dolore vero rem obcaecati
                   numquam beatae fugit nulla esse est laborum? Repudiandae
-                  mollitia at debitis tempore corrupti?
+                  mollitia at debitis tempore corrupti? */}
                 </p>
                 <img
                   className="img"
@@ -216,10 +216,10 @@ function Services() {
               <Tab.Pane eventKey="#SteeringaSuspension">
                 <h2 className="services__titles">Steering & Suspension</h2>
                 <p className="services__paragraph">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                   quidem facilis, provident, cumque dolore vero rem obcaecati
                   numquam beatae fugit nulla esse est laborum? Repudiandae
-                  mollitia at debitis tempore corrupti?
+                  mollitia at debitis tempore corrupti? */}
                 </p>
                 <img
                   className="img"
@@ -233,10 +233,10 @@ function Services() {
                   Wheel Balancing & Tire Repairs
                 </h2>
                 <p className="services__paragraph">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                   quidem facilis, provident, cumque dolore vero rem obcaecati
                   numquam beatae fugit nulla esse est laborum? Repudiandae
-                  mollitia at debitis tempore corrupti?
+                  mollitia at debitis tempore corrupti? */}
                 </p>
                 <img
                   className="img"
@@ -250,10 +250,10 @@ function Services() {
                   Transmission Service and Repair
                 </h2>
                 <p className="services__paragraph">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                   quidem facilis, provident, cumque dolore vero rem obcaecati
                   numquam beatae fugit nulla esse est laborum? Repudiandae
-                  mollitia at debitis tempore corrupti?
+                  mollitia at debitis tempore corrupti? */}
                 </p>
                 <img
                   className="img"

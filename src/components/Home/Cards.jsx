@@ -78,7 +78,7 @@ const Cards = () => {
             />
             <Card.Body className="card__body">
               <Card.Title className="card__body">
-                <Link to="/projects" className="event-opener">
+                <Link to="/services" className="event-opener">
                   <h3>Our Services</h3>
                 </Link>
               </Card.Title>

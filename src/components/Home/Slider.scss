@@ -16,6 +16,14 @@
     }
   }
 }
+.turbo-video {
+  justify-content: center;
+  width: 60%;
+}
+.m5-video {
+  justify-content: center;
+  height: 80%;
+}
 
 .carousel-control-prev {
   @extend %btn-styles;

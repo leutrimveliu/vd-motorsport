@@ -62,8 +62,33 @@ const About = () => {
             >
               Abgasanlagebearbeitung
             </span>
-            , dann bist du an der richtige Stelle bei uns. Wir arbeiten mit
-            hochwertigen Produkten und das alles im Haus.
+            , dann bist du bei uns an der richtige Stelle. Wir arbeiten mit
+            hochwertigen Produkten und passen das{" "}
+            <span
+              style={{
+                color: "#af231c",
+              }}
+            >
+              Tuning
+            </span>{" "}
+            individuell auf dein Auto an. Unser Ziel ist es, ein optimales und
+            standhaftes{" "}
+            <span
+              style={{
+                color: "#af231c",
+              }}
+            >
+              Tuning
+            </span>{" "}
+            aus dem Auto rauszuholen und den Spassfaktor für jeden{" "}
+            <span
+              style={{
+                color: "#af231c",
+              }}
+            >
+              Kunden
+            </span>{" "}
+            zu erhöhen.
           </p>
           <p className="about__content__subtitle my-5" style={{}}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
