@@ -4,9 +4,11 @@ import Cards from "./Cards";
 import vdlogo from "../../assets/vd-logo-bw.png";
 import vdlogo1 from "../../assets/vd-logo.png";
 import turbo from "../../assets/turbo.png";
+import { useTranslation } from "react-i18next";
 import "./about.scss";
 
 const About = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="about">
@@ -38,7 +40,7 @@ const About = () => {
               textAlign: "center",
             }}
           >
-            Willkommen bei{" "}
+            {t("Willkommen bei")}{" "}
             <span
               style={{
                 color: "#af231c",
@@ -46,24 +48,26 @@ const About = () => {
             >
               VD/
             </span>
-            Motorsport. Du wolltest schon immer eine{" "}
+            Motorsport. {t("Du wolltest schon immer eine")}{" "}
             <span
               style={{
                 color: "#af231c",
               }}
             >
-              Softwareoptimierung
+              {t("Softwareoptimierung")}
             </span>{" "}
-            oder eine{" "}
+            {t("oder eine")}{" "}
             <span
               style={{
                 color: "#af231c",
               }}
             >
-              Abgasanlagebearbeitung
+              {t("Abgasanlagebearbeitung")}
             </span>
-            , dann bist du bei uns an der richtige Stelle. Wir arbeiten mit
-            hochwertigen Produkten und passen das{" "}
+            ,{" "}
+            {t(
+              "dann bist du bei uns an der richtige Stelle, Wir arbeiten mit hochwertigen Produkten und passen das"
+            )}{" "}
             <span
               style={{
                 color: "#af231c",
@@ -71,8 +75,9 @@ const About = () => {
             >
               Tuning
             </span>{" "}
-            individuell auf dein Auto an. Unser Ziel ist es, ein optimales und
-            standhaftes{" "}
+            {t(
+              "individuell auf dein Auto an, Unser Ziel ist es, ein optimales und standhaftes"
+            )}{" "}
             <span
               style={{
                 color: "#af231c",
@@ -80,18 +85,18 @@ const About = () => {
             >
               Tuning
             </span>{" "}
-            aus dem Auto rauszuholen und den Spassfaktor für jeden{" "}
+            {t("aus dem Auto rauszuholen und den Spassfaktor für jeden")}{" "}
             <span
               style={{
                 color: "#af231c",
               }}
             >
-              Kunden
+              {t("Kunden")}
             </span>{" "}
-            zu erhöhen.
+            {t("zu erhöhen")}.
           </p>
           <p className="about__content__subtitle my-5" style={{}}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
+            {/* Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
             and scrambled it to make a type specimen book. It has survived not
@@ -99,7 +104,7 @@ const About = () => {
             remaining essentially unchanged. It was popularised in the 1960s
             with the release of Letraset sheets containing Lorem Ipsum
             passages,and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.
+            Aldus PageMaker including versions of Lorem Ipsum. */}
           </p>
           <div />
         </div>
@@ -109,9 +114,9 @@ const About = () => {
             VD/<span style={{ color: "#fff" }}>MOTORSPORT</span>
           </h2>
           <p className="font-weight-bold my-5">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
+            {/* Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
             error amet numquam iure provident voluptate esse quasi, veritatis
-            totam voluptas nostrum quisquam eum porro a pariatur veniam.
+            totam voluptas nostrum quisquam eum porro a pariatur veniam. */}
           </p>
           <Row className="m-0">
             <Cards

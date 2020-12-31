@@ -1,11 +1,14 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Card, CardDeck, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import i5 from "../../assets/audi2.jpg";
-import motor from "../../assets/motor.jpeg";
+import vdm from "../../assets/proschee.jpeg";
+import turbo from "../../assets/turcpean.jpeg";
+import motor from "../../assets/lambovski.jpeg";
 import "./Cards.scss";
 
 const Cards = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <div className="moto" style={{ backgroundColor: "black" }}>
@@ -42,13 +45,13 @@ const Cards = () => {
               }}
               className="card__image"
               variant="top"
-              src={i5}
+              src={turbo}
               alt=""
             />
             <Card.Body className="card__body">
               <Card.Title className="card__body">
                 <Link to="/projects" className="event-opener">
-                  <h3>Our Projects</h3>
+                  <h3> {t("Our Projects")}</h3>
                 </Link>
               </Card.Title>
               <Card.Text className="card__description">
@@ -79,7 +82,7 @@ const Cards = () => {
             <Card.Body className="card__body">
               <Card.Title className="card__body">
                 <Link to="/services" className="event-opener">
-                  <h3>Our Services</h3>
+                  <h3>{t("Our Services")}</h3>
                 </Link>
               </Card.Title>
               <Card.Text className=" card__description">
@@ -104,13 +107,13 @@ const Cards = () => {
               }}
               className="card__image"
               variant="top"
-              src={i5}
+              src={vdm}
               alt=""
             />
             <Card.Body className="card__body">
               <Card.Title className="card__body">
-                <Link to="/projects" className="event-opener">
-                  <h3>Some videos</h3>
+                <Link to="/contact" className="event-opener">
+                  <h3>{t("Contact Us")}</h3>
                 </Link>
               </Card.Title>
               <Card.Text className="card__description">

@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import emailjs from "emailjs-com";
 import "./Appointment.scss";
-import vdbenz from "../../assets/vdbenz.png";
+import vdbenz from "../../assets/vdbenz.jpg";
+import { useTranslation } from "react-i18next";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 
 function Appointment() {
@@ -30,7 +31,7 @@ function Appointment() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
+  const { t } = useTranslation();
   return (
     <div className="appointment" style={{ marginTop: 89 }}>
       {" "}
@@ -51,7 +52,10 @@ function Appointment() {
 
           <Col lg={5} md={12}>
             <div className=" d-flex justify-content-center my-3">
-              <h3 style={{ color: "#af231c" }}>Request an Appointment</h3>
+              <h3 style={{ color: "#af231c" }}>
+                {" "}
+                {t("Request an Appointment")}
+              </h3>
             </div>
             <form onSubmit={sendEmail}>
               <Form>

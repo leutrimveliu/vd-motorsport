@@ -6,12 +6,14 @@ import RoomOutlinedIcon from "@material-ui/icons/RoomOutlined";
 import EmailOutlinedIcon from "@material-ui/icons/EmailOutlined";
 import CallOutlinedIcon from "@material-ui/icons/CallOutlined";
 import FacebookIcon from "@material-ui/icons/Facebook";
+import { useTranslation } from "react-i18next";
 import InstagramIcon from "@material-ui/icons/Instagram";
 
 // css
 import "../Footer/Footer.scss";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <div className="footer__container">
       <Container>
@@ -32,17 +34,17 @@ const Footer = () => {
           </Col>
           <Col lg={4} md={6} sm={12} className="footer__community pb-5 ">
             {/* <ul> */}
-            <strong style={{ color: "#AF231C" }}>OPENING HOURS</strong>
+            <strong style={{ color: "#AF231C" }}>{t("OPENING HOURS")}</strong>
             <hr />
-            <li>Monday - Friday </li>
+            <li>{t("Monday - Friday")} </li>
             <li>09:00 - 12:00 | 13:30 - 18:00</li>
-            <li>Saturday</li>
-            <li>09:00 - 14:00 (continuous)</li>
+            <li>{t("Saturday")} </li>
+            <li>09:00 - 14:00 (continous)</li>
             {/* </ul> */}
           </Col>
           <Col lg={4} md={12} sm={12} className="footer__support ">
             {/* <ul> */}
-            <strong style={{ color: "#AF231C" }}>CONTACT US</strong>
+            <strong style={{ color: "#AF231C" }}>{t("CONTACT US")}</strong>
             <hr />
             <div className="d-flex align-items-center flex-column">
               <a

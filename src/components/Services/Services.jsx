@@ -13,7 +13,10 @@ import steering from "../../assets/steering.jpg";
 import tyre from "../../assets/tyre.jpg";
 import transmission from "../../assets/transmission.jpg";
 import chip from "../../assets/chip.jpg";
+import { useTranslation } from "react-i18next";
+
 function Services() {
+  const { t } = useTranslation();
   if (window.matchMedia("(max-width: 600px)").matches) {
     // do functionality on screens smaller than 600px
     window.scrollTo(0, 500);
@@ -34,47 +37,47 @@ function Services() {
           <Col sm={4}>
             <ListGroup className="services__types">
               <ListGroup.Item action href="#AirConditioning">
-                Air Conditioning
+                {t("Air Conditioning")}
               </ListGroup.Item>
               <ListGroup.Item action href="#BatteryServices">
-                Battery Services
+                {t("Battery Services")}
               </ListGroup.Item>
               <ListGroup.Item action href="#BrakeService">
-                Brake Service and Repair
+                {t("Brake Service and Repair")}
               </ListGroup.Item>
               <ListGroup.Item action href="#ChipTuning">
-                Chip Tuning
+                {t("Chip Tuning")}
               </ListGroup.Item>
               <ListGroup.Item action href="#ClutchServices">
-                Clutch Services
+                {t("Clutch Services")}
               </ListGroup.Item>
               <ListGroup.Item action href="#ComputerDiagnostics">
-                Computer Diagnostics
+                {t("Computer Diagnostics")}
               </ListGroup.Item>
               <ListGroup.Item action href="#EmissionExhaust">
-                Emission & Exhaust
+                {t("Emission & Exhaust System Services")}
               </ListGroup.Item>
               <ListGroup.Item action href="#EngineRepairsReplacement">
-                Engine Repairs and Replacement
+                {t("Engine Repairs and Replacement")}
               </ListGroup.Item>
               <ListGroup.Item action href="#FuelInjectionServices">
-                Fuel Injection Services
+                {t("Fuel Injection Services")}
               </ListGroup.Item>
               <ListGroup.Item action href="#SteeringaSuspension">
-                Steering and Suspension
+                {t("Steering and Suspension")}
               </ListGroup.Item>
               <ListGroup.Item action href="#TransmissionServiceandRepair">
-                Transmission Service and Repair
+                {t("Transmission Service and Repair")}
               </ListGroup.Item>
               <ListGroup.Item action href="#TireRepairs">
-                Wheel Balancing & Tire Repairs
+                {t("Wheel Balancing & Tire Repairs")}
               </ListGroup.Item>
             </ListGroup>
           </Col>
           <Col sm={6}>
             <Tab.Content className="services__description">
               <Tab.Pane eventKey="#AirConditioning">
-                <h2 className="services__titles ">Air Conditioning</h2>
+                <h2 className="services__titles ">{t("Air Conditioning")}</h2>
                 <p className="services__paragraph">
                   {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                   quidem facilis, provident, cumque dolore vero rem obcaecati
@@ -89,7 +92,7 @@ function Services() {
                 />
               </Tab.Pane>
               <Tab.Pane eventKey="#BatteryServices">
-                <h2 className="services__titles">Battery Services</h2>
+                <h2 className="services__titles">{t("Battery Services")}</h2>
                 <p className="services__paragraph">
                   {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                   quidem facilis, provident, cumque dolore vero rem obcaecati
@@ -104,7 +107,9 @@ function Services() {
                 />
               </Tab.Pane>
               <Tab.Pane eventKey="#BrakeService">
-                <h2 className="services__titles">Brake Services</h2>
+                <h2 className="services__titles">
+                  {t("Brake Service and Repair")}
+                </h2>
                 <p className="services__paragraph">
                   {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                   quidem facilis, provident, cumque dolore vero rem obcaecati
@@ -119,7 +124,10 @@ function Services() {
                 />
               </Tab.Pane>
               <Tab.Pane eventKey="#ComputerDiagnostics">
-                <h2 className="services__titles">Computer Diagnostics</h2>
+                <h2 className="services__titles">
+                  {" "}
+                  {t("Computer Diagnostics")}
+                </h2>
                 <p className="services__paragraph">
                   {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                   quidem facilis, provident, cumque dolore vero rem obcaecati
@@ -134,7 +142,7 @@ function Services() {
                 />
               </Tab.Pane>
               <Tab.Pane eventKey="#ChipTuning">
-                <h2 className="services__titles">Chip Tuning</h2>
+                <h2 className="services__titles">{t("Chip Tuning")}</h2>
                 <p className="services__paragraph">
                   {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                   quidem facilis, provident, cumque dolore vero rem obcaecati
@@ -149,7 +157,7 @@ function Services() {
                 />
               </Tab.Pane>
               <Tab.Pane eventKey="#ClutchServices">
-                <h2 className="services__titles">Clutch Services</h2>
+                <h2 className="services__titles"> {t("Clutch Services")}</h2>
                 <p className="services__paragraph">
                   {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                   quidem facilis, provident, cumque dolore vero rem obcaecati
@@ -166,7 +174,7 @@ function Services() {
 
               <Tab.Pane eventKey="#EmissionExhaust">
                 <h2 className="services__titles">
-                  Emission & Exhaust System Services
+                  {t("Emission & Exhaust System Services")}
                 </h2>
                 <p className="services__paragraph">
                   {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
@@ -183,7 +191,7 @@ function Services() {
               </Tab.Pane>
               <Tab.Pane eventKey="#EngineRepairsReplacement">
                 <h2 className="services__titles">
-                  Engine Repairs & Replacement
+                  {t("Engine Repairs and Replacement")}
                 </h2>
                 <p className="services__paragraph">
                   {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
@@ -199,7 +207,9 @@ function Services() {
                 />
               </Tab.Pane>
               <Tab.Pane eventKey="#FuelInjectionServices">
-                <h2 className="services__titles">Fuel Injection Services</h2>
+                <h2 className="services__titles">
+                  {t("Fuel Injection Services")}
+                </h2>
                 <p className="services__paragraph">
                   {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                   quidem facilis, provident, cumque dolore vero rem obcaecati
@@ -214,7 +224,9 @@ function Services() {
                 />
               </Tab.Pane>
               <Tab.Pane eventKey="#SteeringaSuspension">
-                <h2 className="services__titles">Steering & Suspension</h2>
+                <h2 className="services__titles">
+                  {t("Steering and Suspension")}
+                </h2>
                 <p className="services__paragraph">
                   {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                   quidem facilis, provident, cumque dolore vero rem obcaecati
@@ -230,7 +242,7 @@ function Services() {
               </Tab.Pane>
               <Tab.Pane eventKey="#TireRepairs">
                 <h2 className="services__titles">
-                  Wheel Balancing & Tire Repairs
+                  {t("Wheel Balancing & Tire Repairs")}
                 </h2>
                 <p className="services__paragraph">
                   {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
@@ -247,7 +259,7 @@ function Services() {
               </Tab.Pane>
               <Tab.Pane eventKey="#TransmissionServiceandRepair">
                 <h2 className="services__titles">
-                  Transmission Service and Repair
+                  {t("Transmission Service and Repair")}
                 </h2>
                 <p className="services__paragraph">
                   {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea

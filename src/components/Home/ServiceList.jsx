@@ -1,5 +1,6 @@
 import React from "react";
 import { ListGroup } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import { makeStyles, Grid } from "@material-ui/core/";
 import {
   faTruckMonster,
@@ -94,6 +95,8 @@ const useStyles = makeStyles((theme) => ({
 
 function ServiceList() {
   const classes = useStyles();
+  const { t } = useTranslation();
+
   return (
     <div>
       <div className="categories__list">
@@ -121,7 +124,11 @@ function ServiceList() {
                 backgroundColor: "#af231c",
               }}
             ></hr>
-            <p style={{ color: "white" }}>Learn more about our passion!</p>
+
+            <p style={{ color: "white" }}>
+              {" "}
+              {t("Learn more about our passion!")}
+            </p>
           </Grid>
           <Grid item lg={8} md={8} sm={12} xs={12}>
             <Grid
@@ -141,7 +148,7 @@ function ServiceList() {
                     <FontAwesomeIcon icon={faCar} className={classes.icons} />{" "}
                   </div>
                   <div className="d-flex justify-content-center mt-2">
-                    <p className={classes.paragraph}>Vehicle</p>
+                    <p className={classes.paragraph}>{t("Vehicle")}</p>
                   </div>
                 </ListGroup.Item>
               </Grid>
@@ -160,7 +167,7 @@ function ServiceList() {
                   </div>
 
                   <div className="d-flex justify-content-center mt-2">
-                    <p className={classes.paragraph}>Speed</p>
+                    <p className={classes.paragraph}>{t("Speed")}</p>
                   </div>
                 </ListGroup.Item>
               </Grid>
@@ -178,7 +185,7 @@ function ServiceList() {
                     />{" "}
                   </div>
                   <div className="d-flex justify-content-center mt-2">
-                    <p className={classes.paragraph}>Battery</p>
+                    <p className={classes.paragraph}>{t("Battery")}</p>
                   </div>
                 </ListGroup.Item>
               </Grid>
@@ -193,7 +200,7 @@ function ServiceList() {
                     <FontAwesomeIcon icon={faTools} className={classes.icons} />{" "}
                   </div>
                   <div className="d-flex justify-content-center mt-2">
-                    <p className={classes.paragraph}>Service</p>
+                    <p className={classes.paragraph}>{t("Service")}</p>
                   </div>
                 </ListGroup.Item>
               </Grid>
@@ -218,7 +225,7 @@ function ServiceList() {
                     />{" "}
                   </div>
                   <div className="d-flex justify-content-center mt-2">
-                    <p className={classes.paragraph}>Engine</p>
+                    <p className={classes.paragraph}>{t("Engine")}</p>
                   </div>
                 </ListGroup.Item>
               </Grid>
@@ -233,7 +240,7 @@ function ServiceList() {
                     <FontAwesomeIcon icon={faInfo} className={classes.icons} />
                   </div>
                   <div className="d-flex justify-content-center mt-2">
-                    <p className={classes.paragraph}>Info</p>
+                    <p className={classes.paragraph}>{t("Info")}</p>
                   </div>
                 </ListGroup.Item>
               </Grid>
@@ -251,7 +258,7 @@ function ServiceList() {
                     />{" "}
                   </div>
                   <div className="d-flex justify-content-center mt-2">
-                    <p className={classes.paragraph}>Tire</p>
+                    <p className={classes.paragraph}>{t("Tire")}</p>
                   </div>
                 </ListGroup.Item>
               </Grid>
@@ -269,7 +276,7 @@ function ServiceList() {
                     />{" "}
                   </div>
                   <div className="d-flex justify-content-center mt-2">
-                    <p className={classes.paragraph}>Beast</p>
+                    <p className={classes.paragraph}>Tuning</p>
                   </div>
                 </ListGroup.Item>
               </Grid>

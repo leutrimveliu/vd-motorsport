@@ -6,6 +6,7 @@ import projects from "../../assets/projekte.jpeg";
 import bmw2 from "../../assets/bmw2.jpeg";
 import bmw3 from "../../assets/bmwfita.jpeg";
 import lambo from "../../assets/lambo1.jpg";
+import "./SlideProjects.scss";
 
 function SlideProject() {
   return (
@@ -18,16 +19,26 @@ function SlideProject() {
       >
         <Carousel.Item>
           <img
-            className="d-block w-100"
-            style={{ objectFit: "contain" }}
+            component="img"
+            style={{
+              height: "500px",
+              objectFit: "contain",
+              backgroundColor: "black",
+            }}
+            className="img"
             src={turbo}
             alt="First slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className=" justify-content-center"
-            style={{ objectFit: "contain", width: "80%" }}
+            component="img"
+            style={{
+              height: "500px",
+              objectFit: "contain",
+              backgroundColor: "black",
+            }}
+            className="img"
             src={bmw2}
             alt="First slide"
           />
@@ -35,32 +46,52 @@ function SlideProject() {
 
         <Carousel.Item>
           <img
-            className=" justify-content-center"
-            style={{ objectFit: "contain", width: "80%" }}
+            component="img"
+            style={{
+              height: "500px",
+              objectFit: "contain",
+              backgroundColor: "black",
+            }}
+            className="img"
             src={lambo}
             alt="First slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="justify-content-center"
-            style={{ objectFit: "contain", width: "75%" }}
+            component="img"
+            style={{
+              height: "500px",
+              objectFit: "contain",
+              backgroundColor: "black",
+            }}
+            className="img"
             src={bmw3}
             alt="First slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
-            style={{ objectFit: "contain" }}
+            component="img"
+            style={{
+              height: "500px",
+              objectFit: "contain",
+              backgroundColor: "black",
+            }}
+            className="img"
             src={projects}
             alt="Third slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
-            style={{ objectFit: "contain" }}
+            component="img"
+            style={{
+              height: "500px",
+              objectFit: "contain",
+              backgroundColor: "black",
+            }}
+            className="img"
             src={turbo2}
             alt="First slide"
           />

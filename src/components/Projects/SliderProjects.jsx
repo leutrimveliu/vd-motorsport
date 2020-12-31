@@ -1,11 +1,8 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import porsche1 from "../../assets/porsche1.jpeg";
-import porsche2 from "../../assets/porsche2.jpeg";
+import porsche1 from "../../assets/porsche1.jpg";
 import porsche3 from "../../assets/porsche3.jpeg";
 import porsche4 from "../../assets/porsche4.jpeg";
-import i5 from "../../assets/audi2.jpg";
-import i6 from "../../assets/audi3.jpg";
 import "./SliderProjects.scss";
 
 function SliderProjects() {
