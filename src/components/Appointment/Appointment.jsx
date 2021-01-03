@@ -8,13 +8,12 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 function Appointment() {
   function sendEmail(e) {
     e.preventDefault();
-
     emailjs
       .sendForm(
-        "gmail",
-        "template_wtsyypc",
+        "service_5jwnosu",
+        "template_4723srw",
         e.target,
-        "user_VXg0wM7bQvV6iklruaU3c"
+        "user_ySfJL6uIEftOhx8ITUQOt"
       )
       .then(
         (result) => {
@@ -25,7 +24,6 @@ function Appointment() {
           console.log(error.text);
         }
       );
-
     e.target.reset();
   }
   useEffect(() => {
@@ -58,70 +56,60 @@ function Appointment() {
               </h3>
             </div>
             <form onSubmit={sendEmail}>
-              <Form>
-                <Form.Row>
-                  <Form.Group as={Col} controlId="formGridEmail">
-                    <Form.Control type="text" name="name" placeholder="Name" />
-                  </Form.Group>
-                  <Form.Group as={Col} controlId="formGridPassword">
-                    <Form.Control
-                      type="email"
-                      name="email"
-                      placeholder="Email"
-                    />
-                  </Form.Group>
-                </Form.Row>
-                <Form.Group>
-                  <Form.Control type="text" name="phone" placeholder="Phone" />
-                </Form.Group>
+              <div>
+                <div>
+                  <div as={Col} controlId="formGridEmail">
+                    <input type="text" name="name" placeholder="Name" />
+                  </div>
+                  <div as={Col} controlId="formGridPassword">
+                    <input type="email" name="email" placeholder="Email" />
+                  </div>
+                </div>
+                <div>
+                  <input type="text" name="phone" placeholder="Phone" />
+                </div>
 
-                <Form.Row>
-                  <Form.Group as={Col} controlId="formGridAddress2">
-                    <Form.Control
-                      name="date"
-                      type="date"
-                      // value={eventDetails.eventStart}
-                      id="date"
-                    />
-                  </Form.Group>
-                  <Form.Group as={Col} controlId="formGridAddress2">
-                    <Form.Control
+                <div>
+                  <div as={Col} controlId="formGridAddress2">
+                    <input name="date" type="date" />
+                  </div>
+                  <div as={Col} controlId="formGridAddress2">
+                    <input
                       name="time"
                       type="time"
                       // value={eventDetails.eventStart}
-                      id="time"
                     />
-                  </Form.Group>
-                </Form.Row>
-                <Form.Group controlId="formGridEmail">
-                  <Form.Control
+                  </div>
+                </div>
+                <div controlId="formGridEmail">
+                  <input
                     type="text"
                     name="vehiclebrand"
                     placeholder="Vehicle Brand"
                   />
-                </Form.Group>
-                <Form.Group controlId="formGridEmail">
-                  <Form.Control
+                </div>
+                <div controlId="formGridEmail">
+                  <input
                     type="text"
                     name="vehiclemodel"
                     placeholder="Vehicle Model"
                   />
-                </Form.Group>
-                <Form.Group controlId="formGridEmail">
-                  <Form.Control
+                </div>
+                <div controlId="formGridEmail">
+                  <input
                     type="number"
                     name="vehicleyear"
                     placeholder="Vehicle Year"
                   />
-                </Form.Group>
-                <Form.Group>
-                  <Form.Control
+                </div>
+                <div>
+                  <input
                     as="textarea"
                     rows={6}
                     name="service"
                     placeholder="Services/Comments"
                   />
-                </Form.Group>
+                </div>
 
                 <Button
                   style={{
@@ -133,7 +121,7 @@ function Appointment() {
                 >
                   Submit
                 </Button>
-              </Form>
+              </div>
             </form>
           </Col>
         </Row>

@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-
 import emailjs from "emailjs-com";
 import { Row, Col } from "react-bootstrap";
 import HomeIcon from "@material-ui/icons/Home";
@@ -14,10 +13,10 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        "gmail",
-        "template_wtsyypc",
+        "service_5jwnosu",
+        "template_ykr4h1p",
         e.target,
-        "user_VXg0wM7bQvV6iklruaU3c"
+        "user_ySfJL6uIEftOhx8ITUQOt"
       )
       .then(
         (result) => {

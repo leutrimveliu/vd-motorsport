@@ -94,7 +94,7 @@ const Footer = () => {
 
       <hr />
       <h6 className="footer__copyright">
-        © 2020 <span style={{ color: "#AF231C" }}>VD Motorsport</span> , Inc.
+        © 2021 <span style={{ color: "#AF231C" }}>VD Motorsport</span> , Inc.
         All rights reserved
       </h6>
     </div>
