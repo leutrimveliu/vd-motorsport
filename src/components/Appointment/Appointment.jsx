@@ -36,9 +36,10 @@ function Appointment() {
       <Container lg={12}>
         <Row className="row m-0 d-flex justify-content-center">
           <Col lg={5} md={12}>
-            <div className=" d-flex justify-content-center mt-5">
+            <div className="appoint__img d-flex justify-content-center my-5">
               <img
                 className="appointment__image"
+                component="img"
                 src={vdbenz}
                 style={{ width: "100%" }}
                 alt=""
@@ -86,20 +87,19 @@ function Appointment() {
 
               <div className="form-row">
                 <div className="form-group col-md-6">
+                  {/* <label htmlFor="" style={{ textAlign: "left" }}>
+                    Date:
+                  </label> */}
                   <input
                     name="date"
+                    onFocus="(this.type='date')"
                     className="form-control"
                     placeholder="MM/DD/YYYY"
-                    type="date"
+                    type="Date"
                   />
                 </div>
                 <div className="form-group col-md-6">
-                  <input
-                    name="time"
-                    placeholder="MM/DD/YYYY"
-                    className="form-control"
-                    type="time"
-                  />
+                  <input name="time" className="form-control" type="Time" />
                 </div>
               </div>
               <div className="form-group">
