@@ -1,6 +1,7 @@
 {
   "name": "vd-motorsport",
   "version": "0.1.0",
+  "homepage": "http://www.vdmotorsport.ch",
   "private": true,
   "dependencies": {
     "@date-io/core": "^2.10.6",
