@@ -17,10 +17,11 @@ const Slider = () => {
       <Carousel.Item>
         <video
           className="m5-video flex-video widescreen"
-          // controls
+          controls
+          autoPlay={true}
           // style={{ width: "100%", marginTop: "-350px" }}
           style={{ width: "100%", height: 570, objectFit: "cover" }}
-          autoPlay={true}
+          // autoPlay={true}
           src={m5}
           type="video/mp4"
         />

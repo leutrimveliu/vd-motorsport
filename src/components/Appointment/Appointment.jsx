@@ -36,11 +36,11 @@ function Appointment() {
       <Container lg={12}>
         <Row className="row m-0 d-flex justify-content-center">
           <Col lg={5} md={12}>
-            <div className=" d-flex justify-content-center">
+            <div className=" d-flex justify-content-center mt-5">
               <img
                 className="appointment__image"
                 src={vdbenz}
-                style={{ width: "115%" }}
+                style={{ width: "100%" }}
                 alt=""
                 srcset=""
               />
@@ -86,10 +86,20 @@ function Appointment() {
 
               <div className="form-row">
                 <div className="form-group col-md-6">
-                  <input name="date" className="form-control" type="date" />
+                  <input
+                    name="date"
+                    className="form-control"
+                    placeholder="MM/DD/YYYY"
+                    type="date"
+                  />
                 </div>
                 <div className="form-group col-md-6">
-                  <input name="time" className="form-control" type="time" />
+                  <input
+                    name="time"
+                    placeholder="MM/DD/YYYY"
+                    className="form-control"
+                    type="time"
+                  />
                 </div>
               </div>
               <div className="form-group">

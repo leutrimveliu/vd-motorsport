@@ -5,6 +5,7 @@ import HomeIcon from "@material-ui/icons/Home";
 import MailIcon from "@material-ui/icons/Mail";
 import PhoneIcon from "@material-ui/icons/Phone";
 import GoogleMap from "../GoogleMap/GoogleMap";
+import { useTranslation } from "react-i18next";
 import "./Contact.scss";
 
 export default function Contact() {
@@ -33,6 +34,7 @@ export default function Contact() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const { t } = useTranslation();
 
   return (
     <>
@@ -44,7 +46,7 @@ export default function Contact() {
         <Row className="row m-0">
           <Col lg={6} md={12}>
             <div className=" d-flex justify-content-center my-3">
-              <h3 style={{ color: "#af231c" }}>Contact US</h3>
+              <h3 style={{ color: "#af231c" }}>{t("Contact Us")}</h3>
             </div>
             <form onSubmit={sendEmail}>
               <div className="row pt-3 mx-auto my-3">
@@ -101,7 +103,9 @@ export default function Contact() {
           <Col lg={6} md={12}>
             <div className="row d-flex justify-content-center  my-3">
               <div className="col-8 justify-content-center " style={{}}>
-                <h3 style={{ color: "#af231c" }}>Get in touch with us</h3>
+                <h3 style={{ color: "#af231c" }}>
+                  {t("Get in touch with us")}
+                </h3>
               </div>
               <div className=" col-8 mt-5 d-flex flex-column">
                 {" "}
@@ -116,7 +120,10 @@ export default function Contact() {
                       {" "}
                       <HomeIcon
                         className="justify-content-lg-start home__icon"
-                        style={{ fontSize: 50, color: " #af231c" }}
+                        style={{
+                          fontSize: 50,
+                          color: " #af231c",
+                        }}
                       />{" "}
                     </div>
 
@@ -135,6 +142,7 @@ export default function Contact() {
                         fontSize: 18,
                         color: " white",
                         textAlign: "left",
+                        // paddingTop: 5,
                       }}
                     >
                       {" "}
@@ -154,7 +162,7 @@ export default function Contact() {
                     <p
                       className="home__desc"
                       style={{
-                        fontSize: 20,
+                        fontSize: 18,
                         color: " white",
                         textAlign: "left",
                         paddingTop: 5,
