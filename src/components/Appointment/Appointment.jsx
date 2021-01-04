@@ -40,7 +40,7 @@ function Appointment() {
               <img
                 className="appointment__image"
                 src={vdbenz}
-                style={{ width: "110%" }}
+                style={{ width: "115%" }}
                 alt=""
                 srcset=""
               />
@@ -48,80 +48,96 @@ function Appointment() {
           </Col>
           <Col lg={1} md={12}></Col>
 
-          <Col lg={5} md={12}>
-            <div className=" d-flex justify-content-center my-3">
+          <Col lg={6} md={12}>
+            <div className=" d-flex justify-content-center mt-2 mb-4">
               <h3 style={{ color: "#af231c" }}>
                 {" "}
                 {t("Request an Appointment")}
               </h3>
             </div>
-            <form onSubmit={sendEmail}>
-              <div>
-                <div>
-                  <div as={Col} controlId="formGridEmail">
-                    <input type="text" name="name" placeholder="Name" />
-                  </div>
-                  <div as={Col} controlId="formGridPassword">
-                    <input type="email" name="email" placeholder="Email" />
-                  </div>
-                </div>
-                <div>
-                  <input type="text" name="phone" placeholder="Phone" />
-                </div>
 
-                <div>
-                  <div as={Col} controlId="formGridAddress2">
-                    <input name="date" type="date" />
-                  </div>
-                  <div as={Col} controlId="formGridAddress2">
-                    <input
-                      name="time"
-                      type="time"
-                      // value={eventDetails.eventStart}
-                    />
-                  </div>
-                </div>
-                <div controlId="formGridEmail">
+            <form onSubmit={sendEmail} className="pt-3">
+              <div className="form-row">
+                <div className="form-group col-md-6">
                   <input
                     type="text"
-                    name="vehiclebrand"
-                    placeholder="Vehicle Brand"
+                    className="form-control"
+                    name="name"
+                    placeholder="Name"
                   />
                 </div>
-                <div controlId="formGridEmail">
+                <div className="form-group col-md-6">
                   <input
-                    type="text"
-                    name="vehiclemodel"
-                    placeholder="Vehicle Model"
+                    type="email"
+                    className="form-control"
+                    name="email"
+                    placeholder="Email"
                   />
                 </div>
-                <div controlId="formGridEmail">
-                  <input
-                    type="number"
-                    name="vehicleyear"
-                    placeholder="Vehicle Year"
-                  />
-                </div>
-                <div>
-                  <input
-                    as="textarea"
-                    rows={6}
-                    name="service"
-                    placeholder="Services/Comments"
-                  />
-                </div>
-
-                <Button
-                  style={{
-                    backgroundColor: "#af231c",
-                    width: 200,
-                    border: "none",
-                  }}
-                  type="submit"
-                >
-                  Submit
-                </Button>
               </div>
+              <div className="form-group">
+                <input
+                  type="text"
+                  className="form-control"
+                  name="phone"
+                  placeholder="Phone"
+                />
+              </div>
+
+              <div className="form-row">
+                <div className="form-group col-md-6">
+                  <input name="date" className="form-control" type="date" />
+                </div>
+                <div className="form-group col-md-6">
+                  <input name="time" className="form-control" type="time" />
+                </div>
+              </div>
+              <div className="form-group">
+                <input
+                  type="text"
+                  className="form-control"
+                  name="vehiclebrand"
+                  placeholder="Vehicle Brand"
+                />
+              </div>
+              <div className="form-group">
+                <input
+                  type="text"
+                  className="form-control"
+                  name="vehiclemodel"
+                  placeholder="Vehicle Model"
+                />
+              </div>
+              <div className="form-group">
+                <input
+                  className="form-control"
+                  type="number"
+                  name="vehicleyear"
+                  placeholder="Vehicle Year"
+                />
+              </div>
+              <div className="form-group">
+                <textarea
+                  className="form-control"
+                  type="textarea"
+                  as="textarea"
+                  cols="30"
+                  rows="8"
+                  name="service"
+                  placeholder="Services/Comments"
+                />
+              </div>
+
+              <Button
+                style={{
+                  backgroundColor: "#af231c",
+                  width: 200,
+                  border: "none",
+                }}
+                type="submit"
+              >
+                Submit
+              </Button>
             </form>
           </Col>
         </Row>
