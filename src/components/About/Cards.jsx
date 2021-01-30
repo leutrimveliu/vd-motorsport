@@ -21,7 +21,16 @@ const Cards = ({
 }) => {
   return (
     <Card className="card">
-      <Card.Img className="card__image" variant="top" src={imageUrl} />
+      <Card.Img
+        className="card__image"
+        variant="top"
+        src={imageUrl}
+        style={{
+          height: "250px",
+          objectFit: "contain",
+          backgroundColor: "black",
+        }}
+      />
       <Card.Body className="card__content">
         <Card.Title className="card__title">{name}</Card.Title>
         <Card.Text className="card__work">{info}</Card.Text>

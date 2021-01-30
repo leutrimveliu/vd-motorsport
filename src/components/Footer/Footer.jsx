@@ -54,7 +54,11 @@ const Footer = () => {
                 className="Link__Edit"
               >
                 <RoomOutlinedIcon style={{ fontSize: 30 }} />
-                <i> Heidenrietstrasse 10 8600 Dübendorf, Switzerland</i>
+                <i>
+                  {" "}
+                  Heidenrietstrasse 10 <br />
+                  8600 Dübendorf, Switzerland
+                </i>
               </a>
               <li>
                 <EmailOutlinedIcon />
@@ -62,7 +66,8 @@ const Footer = () => {
               </li>
               <li>
                 {" "}
-                <CallOutlinedIcon /> <span>&nbsp;&nbsp;</span>
+                <CallOutlinedIcon />
+                {/* <span>&nbsp;</span> */}
                 <i> +41 76 330 76 82 </i>
               </li>
               <a
@@ -72,7 +77,9 @@ const Footer = () => {
                 className="Link__Edit"
               >
                 <li>
-                  <FacebookIcon /> <span>&nbsp;&nbsp;</span>VD/Motorsport
+                  <FacebookIcon />
+                  <span>&nbsp;</span>
+                  VD/Motorsport
                 </li>
               </a>
               <a
@@ -83,7 +90,7 @@ const Footer = () => {
               >
                 <li>
                   <InstagramIcon />
-                  <span>&nbsp;&nbsp;</span>vdm_motorsport
+                  <span>&nbsp;</span>vdm_motorsport
                 </li>
               </a>
             </div>

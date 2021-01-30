@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import emailjs from "emailjs-com";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Button } from "react-bootstrap";
 import HomeIcon from "@material-ui/icons/Home";
 import MailIcon from "@material-ui/icons/Mail";
 import PhoneIcon from "@material-ui/icons/Phone";
@@ -9,13 +9,34 @@ import { useTranslation } from "react-i18next";
 import "./Contact.scss";
 
 export default function Contact() {
+  // function sendEmail(e) {
+  //   e.preventDefault();
+
+  //   emailjs
+  //     .sendForm(
+  //       "service_5jwnosu",
+  //       "template_ykr4h1p",
+  //       e.target,
+  //       "user_ySfJL6uIEftOhx8ITUQOt"
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log("SUCCESS", result.text, result.status);
+  //         alert("Email sent successfully!");
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+
+  //   e.target.reset();
+  // }
   function sendEmail(e) {
     e.preventDefault();
-
     emailjs
       .sendForm(
         "service_5jwnosu",
-        "template_ykr4h1p",
+        "template_4723srw",
         e.target,
         "user_ySfJL6uIEftOhx8ITUQOt"
       )
@@ -28,7 +49,6 @@ export default function Contact() {
           console.log(error.text);
         }
       );
-
     e.target.reset();
   }
   useEffect(() => {
@@ -44,7 +64,109 @@ export default function Contact() {
         style={{ backgroundColor: "black" }}
       >
         <Row className="row m-0">
-          <Col lg={6} md={12}>
+          <Col lg={1} md={12}></Col>
+          <Col lg={5} md={12}>
+            <div className=" d-flex justify-content-center mt-2 mb-4">
+              <h3 style={{ color: "#af231c" }}>
+                {" "}
+                {t("Request an Appointment")}
+              </h3>
+            </div>
+
+            <form onSubmit={sendEmail} className="pt-3">
+              <div className="form-row">
+                <div className="form-group col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    name="name"
+                    placeholder="Name"
+                  />
+                </div>
+                <div className="form-group col-md-6">
+                  <input
+                    type="email"
+                    className="form-control"
+                    name="email"
+                    placeholder="Email"
+                  />
+                </div>
+              </div>
+              <div className="form-group">
+                <input
+                  type="text"
+                  className="form-control"
+                  name="phone"
+                  placeholder="Phone"
+                />
+              </div>
+
+              <div className="form-row">
+                <div className="form-group col-md-6">
+                  {/* <label htmlFor="" style={{ textAlign: "left" }}>
+                    Date:
+                  </label> */}
+                  <input
+                    name="date"
+                    onFocus="(this.type='date')"
+                    className="form-control"
+                    placeholder="MM/DD/YYYY"
+                    type="Date"
+                  />
+                </div>
+                <div className="form-group col-md-6">
+                  <input name="time" className="form-control" type="Time" />
+                </div>
+              </div>
+              <div className="form-group">
+                <input
+                  type="text"
+                  className="form-control"
+                  name="vehiclebrand"
+                  placeholder="Vehicle Brand"
+                />
+              </div>
+              <div className="form-group">
+                <input
+                  type="text"
+                  className="form-control"
+                  name="vehiclemodel"
+                  placeholder="Vehicle Model"
+                />
+              </div>
+              <div className="form-group">
+                <input
+                  className="form-control"
+                  type="number"
+                  name="vehicleyear"
+                  placeholder="Vehicle Year"
+                />
+              </div>
+              <div className="form-group">
+                <textarea
+                  className="form-control"
+                  type="textarea"
+                  as="textarea"
+                  cols="30"
+                  rows="8"
+                  name="service"
+                  placeholder="Services/Comments"
+                />
+              </div>
+
+              <Button
+                style={{
+                  backgroundColor: "#af231c",
+                  width: 200,
+                  border: "none",
+                }}
+                type="submit"
+              >
+                Submit
+              </Button>
+            </form>
+          </Col>
+          {/* <Col lg={6} md={12}>
             <div className=" d-flex justify-content-center my-3">
               <h3 style={{ color: "#af231c" }}>{t("Contact Us")}</h3>
             </div>
@@ -99,8 +221,8 @@ export default function Contact() {
                 </div>
               </div>
             </form>
-          </Col>
-          <Col lg={6} md={12}>
+          </Col> */}
+          <Col lg={5} md={12}>
             <div className="row d-flex justify-content-center  my-3">
               <div className="col-8 justify-content-center " style={{}}>
                 <h3 style={{ color: "#af231c" }}>
@@ -192,6 +314,7 @@ export default function Contact() {
               </div>
             </div>
           </Col>
+          <Col lg={1} md={12}></Col>
         </Row>
       </div>
     </>

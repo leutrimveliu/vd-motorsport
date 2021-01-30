@@ -115,9 +115,9 @@ function ServiceList() {
             </h1>
             <hr
               style={{
-                textAlign: "left",
-                marginLeft: 55,
-                width: "25%",
+                textAlign: "center",
+                // marginLeft: 55,
+                width: "35%",
                 height: 4,
                 borderWidth: 0,
                 color: "white",
@@ -129,6 +129,23 @@ function ServiceList() {
               {" "}
               {t("Learn more about our passion!")}
             </p>
+            <hr
+              style={{
+                textAlign: "center",
+                // marginLeft: 100,
+                width: "35%",
+                height: 4,
+                borderWidth: 0,
+                color: "white",
+                backgroundColor: "#af231c",
+              }}
+            ></hr>
+            <h2
+              className="font-weight-bold "
+              style={{ fontSize: 35, fontWeight: "bold", color: "#af231c" }}
+            >
+              VD/<span style={{ color: "#fff" }}>MOTORSPORT</span>
+            </h2>
           </Grid>
           <Grid item lg={8} md={8} sm={12} xs={12}>
             <Grid

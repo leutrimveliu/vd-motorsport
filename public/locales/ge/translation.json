@@ -2,9 +2,9 @@
   "Home": "Startseite",
   "Projects": "Projekte",
   "Services": "Dienstleistungen",
-  "Appointment": "Einen Termin machen",
+  "Appointment": "Termin vereinbaren",
   "Contact": "Kontakt",
-  "About": "Über",
+  "About": "Über uns",
   "Choose Language":"Sprache wählen",
   "img":"https://www.countryflags.com/wp-content/uploads/germany-flag-png-large.png",
   "lang":"Deutsch",
@@ -14,11 +14,11 @@
   "Battery":"Batterie",
   "Service":"Bedienung",
   "Engine":"Motor",
-  "Info":"Die Info",
+  "Info":"Info",
   "Tire":"Reifen",
   "Beast":"Tier",
   "Our Projects":"Unsere Projekte",
-  "Our Services":"Unsere Leistungen",
+  "Our Services":"Dienstleistungen",
   "Some Beasts":"Einige Bestien",
   "Contact Us":"Kontaktiere uns",
   "OPENING HOURS":"ÖFFNUNGSZEITEN",
@@ -50,7 +50,12 @@
  "Kunden":"Kunden",
  "zu erhöhen":"zu erhöhen",
  "Request an Appointment":"Termin anfordern",
- "Get in touch with us":"Nehmen Sie Kontakt mit uns auf"
+ "Get in touch with us":"Nehmen Sie Kontakt mit uns auf",
+ "CEO/Mechaniker":"CEO/Mechaniker",
+ "Mechaniker":"Mechaniker",
+ "Verkaufsleiter":"Verkaufsleiter",
+ "Marketing Manager":"Marketing Manager"
+
 
 
 

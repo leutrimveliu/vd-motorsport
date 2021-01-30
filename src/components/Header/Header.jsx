@@ -64,14 +64,7 @@ const Header = () => {
               {/* Services */}
               {t("Services")}
             </NavLink>
-            <NavLink
-              to="/appointment"
-              className="header__option"
-              onClick={() => setExpanded(false)}
-            >
-              {/* Videos */}
-              {t("Appointment")}
-            </NavLink>
+
             <NavLink
               to="/contact"
               className="header__option"

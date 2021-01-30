@@ -17,8 +17,8 @@ class GoogleMap extends React.Component {
         className="GoogleMap__vd"
         containerStyle={style}
         initialCenter={{
-          lat: 47.394528,
-          lng: 8.654847,
+          lat: 47.39348670911013,
+          lng: 8.65076136939237,
         }}
       >
         <Marker onClick={this.onMarkerClick} name={"Current location"} />

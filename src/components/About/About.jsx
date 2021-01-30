@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row } from "react-bootstrap";
 import Cards from "./Cards";
 import vdlogo from "../../assets/vd-logo-bw.png";
 import vdlogo1 from "../../assets/vd-logo.png";
+import dv from "../../assets/dv.jpeg";
+import kv from "../../assets/kv.jpeg";
+import qv from "../../assets/qv.jpg";
+import arb from "../../assets/arb.jpeg";
 import turbo from "../../assets/turbo.png";
 import { useTranslation } from "react-i18next";
 import "./about.scss";
 
 const About = () => {
   const { t } = useTranslation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="about">
@@ -120,28 +127,20 @@ const About = () => {
           </p>
           <Row className="m-0">
             <Cards
-              imageUrl="https://mdbootstrap.com/img/Photos/Others/photo1.jpg"
+              imageUrl={dv}
               name="Durim Velija"
-              info="Team Leader"
-              smOne="facebook"
-              smTwo="linkedin"
-              smThree="twitter"
+              info={t("CEO/Mechaniker")}
+            />
+            <Cards imageUrl={qv} name="Gendrim Velija" info={t("Mechaniker")} />
+            <Cards
+              imageUrl={kv}
+              name="Kushtrim Velija"
+              info={t("Verkaufsleiter")}
             />
             <Cards
-              imageUrl="https://mdbootstrap.com/img/Photos/Others/photo2.jpg"
-              name="test test"
-              info="Scrum Master & Web Developer"
-              smOne="facebook"
-              smTwo="linkedin"
-              smThree="twitter"
-            />
-            <Cards
-              imageUrl="https://mdbootstrap.com/img/Photos/Others/photo10.jpg"
-              name="test test"
-              info="Web Developer & Intern"
-              smOne="facebook"
-              smTwo="linkedin"
-              smThree="twitter"
+              imageUrl={arb}
+              name="Arbër Gashi"
+              info={t("Marketing Manager")}
             />
           </Row>
         </div>

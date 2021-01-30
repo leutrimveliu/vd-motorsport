@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import vdm from "../../assets/proschee.jpeg";
 import turbo from "../../assets/turcpean.jpeg";
 import motor from "../../assets/lambovski.jpeg";
+import team from "../../assets/teamvd.jpeg";
 import "./Cards.scss";
 
 const Cards = () => {
@@ -34,7 +35,7 @@ const Cards = () => {
         className=" row cards d-flex justify-content-center pb-5 m-0"
         style={{ backgroundColor: "black" }}
       >
-        <CardDeck as={Col} xs={12} sm={12} md={4} lg={4}>
+        <CardDeck as={Col} xs={12} sm={12} md={3} lg={3}>
           <Card className="card__container mb-2">
             <Card.Img
               component="img"
@@ -65,7 +66,7 @@ const Cards = () => {
             </Card.Footer> */}
           </Card>
         </CardDeck>
-        <CardDeck as={Col} xs={12} sm={12} md={4} lg={4}>
+        <CardDeck as={Col} xs={12} sm={12} md={3} lg={3}>
           <Card className=" card__container mb-2">
             <Card.Img
               component="img"
@@ -96,7 +97,7 @@ const Cards = () => {
             </Card.Footer> */}
           </Card>
         </CardDeck>
-        <CardDeck as={Col} xs={12} sm={12} md={4} lg={4}>
+        <CardDeck as={Col} xs={12} sm={12} md={3} lg={3}>
           <Card className=" card__container mb-2">
             <Card.Img
               component="img"
@@ -114,6 +115,37 @@ const Cards = () => {
               <Card.Title className="card__body">
                 <Link to="/contact" className="event-opener">
                   <h3>{t("Contact Us")}</h3>
+                </Link>
+              </Card.Title>
+              <Card.Text className="card__description">
+                {/* This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer. */}
+              </Card.Text>
+            </Card.Body>
+            {/* <Card.Footer>
+              <p>Some thing to say</p>
+            </Card.Footer> */}
+          </Card>
+        </CardDeck>
+        <CardDeck as={Col} xs={12} sm={12} md={3} lg={3}>
+          <Card className=" card__container mb-2">
+            <Card.Img
+              component="img"
+              style={{
+                height: "250px",
+                objectFit: "contain",
+                backgroundColor: "black",
+              }}
+              className="card__image"
+              variant="top"
+              src={team}
+              alt=""
+            />
+            <Card.Body className="card__body">
+              <Card.Title className="card__body">
+                <Link to="/about" className="event-opener">
+                  <h3>{t("About")}</h3>
                 </Link>
               </Card.Title>
               <Card.Text className="card__description">

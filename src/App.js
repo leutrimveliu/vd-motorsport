@@ -1,4 +1,5 @@
 import Header from "../src/components/Header/Header";
+import { Helmet } from "react-helmet";
 import Footer from "../src/components/Footer/Footer";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Route, Switch } from "react-router-dom";
@@ -15,13 +16,20 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <Helmet>
+          <title>VD Motorsport</title>
+          <meta
+            name="description"
+            content="This is the official website of VD Motorsport! You can see our work here!"
+          />
+        </Helmet>
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/contact" component={Contact} />
           <Route path="/projects" component={Projects} />
           <Route path="/services" component={Services} />
-          <Route path="/appointment" component={Appointment} />
+          {/* <Route path="/appointment" component={Appointment} /> */}
           <Route path="/about" component={About} />
         </Switch>
         <Footer />
